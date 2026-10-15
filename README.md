@@ -66,7 +66,8 @@ height. Keep at least **1 n** of empty space on every side of the mark or any lo
 | Package mark              | 24 px tall              | 8 mm tall         |
 | Cytoscape co-brand lockup | 24 px tall              | 8 mm tall         |
 
-Below 24 px, use the plain graphty mark instead of a package mark.
+Below 24 px, use the plain graphty mark instead of a package mark. The one exception is a
+package's own favicon, where the page title next to it names the package.
 
 ## Color
 
@@ -205,7 +206,9 @@ Rules:
 - No stock photos of people at screens, abstract "network" glows, neon, lens flares or
   three-dimensional chrome. The brand is flat and precise.
 - Social images use the text color `#14161f` as their background with the color-on-dark lockup;
-  see `icons/social/`.
+  see `icons/social/` and each package's `social/` folder.
+- Avatars are the mark in white, with its lime node, on a solid ink `#2a3045` square. Never use the
+  transparent mark as an avatar: on a dark interface its ink disappears into the background.
 
 ## Misuse
 
@@ -230,7 +233,8 @@ Do not:
 ## Files
 
 Every logo comes as SVG (vector, preferred wherever it is accepted) and as transparent PNG. PNG
-names end in their size: `-64.png` is 64 x 64 px, `-800w.png` is 800 px wide.
+names end in their size: `-64.png` is 64 x 64 px, `-800w.png` is 800 px wide. Avatars, app icons,
+social images and the on-white copies have their background built in.
 
 ```
 graphty-brand/
@@ -245,17 +249,22 @@ graphty-brand/
 |   |                        graph-samples, webgpu-graph-algorithms, cytoscape-extensions
 |   |-- mark/                the package mark (packages that have one); PNG 16 to 512 px
 |   |-- lockup/              package mark + "graphty" + package name
-|   `-- wordmark/            "graphty" + package name, no mark
+|   |-- wordmark/            "graphty" + package name, no mark
+|   |-- social/              Open Graph 1200 x 630 and GitHub social preview 1280 x 640
+|   `-- icons/               favicon.svg, favicon.ico (16, 32, 48), PNGs and apple-touch-icon (180),
+|                            for graphty-element, layout, algorithms and graph-io
 |-- co-brand/cytoscape/      color versions only
 |   |-- symbol/              g, heart, Cytoscape.js logo
 |   `-- lockup/              the symbol + "graphty cytoscape-extensions"
 |-- icons/
+|   |-- avatar/              the mark on a solid ink square: SVG, PNG 72, 512 and 1024 px
 |   |-- favicon/             favicon.ico (16, 32, 48), favicon.svg (adapts to dark mode), PNGs
 |   |-- app/                 apple-touch-icon (180), android-chrome 192 and 512, maskable 192 and 512
 |   `-- social/              Open Graph 1200 x 630, GitHub social preview 1280 x 640
 |-- colors/                  palette sheet, tokens.json, tokens.css
 |-- fonts/                   Outfit (variable TTF), its license OFL.txt, README.md
 |-- guide/                   the diagrams in this guide
+|   `-- on-white/            color-on-light logos with a white background built in, SVG and PNG
 `-- design/                  how the brand was designed: the options considered, each design
                              round, and the scripts that build every file in this kit
 ```
@@ -266,12 +275,16 @@ version is `color-on-light`, `color-on-dark`, `white` or `black`.
 | I need...                              | Use                                                                                                             |
 | -------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | The logo on a web page or in a README  | `logo/lockup/horizontal/svg/color-on-light/` (and `color-on-dark/` for dark mode)                               |
+| A logo that must read in light and dark mode without switching (npm READMEs) | `guide/on-white/` (SVG) or `guide/on-white/png/` (PNG, each at its README width and twice that) |
 | A site favicon                         | `icons/favicon/favicon.svg` plus `icons/favicon/favicon.ico` as the fallback                                    |
 | An iOS home-screen icon                | `icons/app/apple-touch-icon.png`                                                                                |
 | A web app manifest icon                | `icons/app/android-chrome-192.png`, `-512.png`, and `maskable-192.png`, `-512.png` with `"purpose": "maskable"` |
 | A link preview image                   | `icons/social/open-graph-1200x630.png`                                                                          |
-| The GitHub repository social preview   | `icons/social/github-social-preview-1280x640.png`                                                               |
-| An avatar (GitHub org, npm, chat)      | `logo/mark/png/color-on-light/graphty-mark-color-on-light-512.png`, or the app icon tile                        |
+| The GitHub repository social preview   | `icons/social/github-social-preview-1280x640.png` (the lockup); this brand kit's own repository uses it too |
+| An avatar (GitHub org, GitHub App, npm, Gravatar, chat) | `icons/avatar/graphty-avatar-1024.png` or `-512.png`: reads on light and dark interfaces and survives a circle crop |
+| A notification app icon (Pushover)     | `icons/avatar/graphty-avatar-72.png`                                                                            |
+| A package's favicon (its docs or Storybook) | `child-brands/<package>/icons/`; packages without one use `icons/favicon/`                                 |
+| A package's link preview or GitHub social preview | `child-brands/<package>/social/`                                                                     |
 | A package README header                | `child-brands/<package>/lockup/svg/...`                                                                         |
 | One-color print, engraving, embroidery | `logo/.../svg/black/` or `svg/white/`                                                                           |
 | Colors in code                         | `colors/tokens.css` or `colors/tokens.json`                                                                     |

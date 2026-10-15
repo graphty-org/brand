@@ -15,4 +15,7 @@ node "$HERE/render.mjs" "$OUT" "$ROOT/tmp/render-list.json"
 node "$HERE/render.mjs" "$OUT" "$ROOT/tmp/render-list2.json"
 F="$OUT/icons/favicon"
 convert "$F/favicon-16.png" "$F/favicon-32.png" "$F/favicon-48.png" "$F/favicon.ico"
+for F in "$OUT"/child-brands/*/icons; do
+  convert "$F/favicon-16.png" "$F/favicon-32.png" "$F/favicon-48.png" "$F/favicon.ico"
+done
 node "$HERE/check.mjs" "$OUT"

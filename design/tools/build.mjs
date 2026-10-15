@@ -119,6 +119,11 @@ const appTile = (p, id, rx = 14, s = 0.78) => {
   }
   return `<rect width="64" height="64" rx="${rx}" fill="${p.tile}"/>` + place(s, 32, 32).wrap(gMark({ ink: p.tileInk, accent: p.tileAccent }));
 };
+const tileOf = (body, s) => `<rect width="64" height="64" fill="${C.tile}"/>` + place(s, 32, 32).wrap(body);
+// the mark's farthest ink is 35.3 units from the tile's center; at 0.7 it ends 77% of the way to a circle crop's edge
+const AVATAR_SCALE = 0.7;
+// colors swapped when the browser is in dark mode, for favicons (a tab bar follows the OS theme)
+const darkSwitch = (svg) => svg.replace(/>/, `><style>@media (prefers-color-scheme:dark){[fill="${C.ink}"]{fill:${C.inkDark}}[stroke="${C.ink}"]{stroke:${C.inkDark}}[fill="${C.markOnWhite}"]{fill:${C.lime}}[stroke="${C.markOnWhite}"]{stroke:${C.lime}}}</style>`);
 // package -> [display name after "graphty", badge drawer or null for the plain mark, left edge of the badge's ink]
 export const PACKAGES = {
   "graphty-element": { name: "element", npm: "@graphty/graphty-element", draw: (p) => poly([[11, 19], [3, 32], [11, 45]], 5, p.ink) + poly([[53, 19], [61, 32], [53, 45]], 5, p.ink) + place(0.66, 32, 32).wrap(gMark(p)), left: 0, what: "the g between angle brackets: a web component" },
@@ -134,6 +139,19 @@ export const PACKAGES = {
   }, left: 0, what: "the g on a chip with pins" },
   "cytoscape-extensions": { name: "cytoscape-extensions", npm: "@graphty/cytoscape-extensions", draw: null, what: "the plain mark; its partner sign is the Cytoscape co-brand" },
 };
+// the line under the lockup on each package's social cards
+export const TAGLINES = {
+  "graphty-element": "a web component for 3D and 2D graph visualization",
+  layout: "2D and 3D graph layouts for the web",
+  algorithms: "graph algorithms: paths, centrality, communities and more",
+  "graph-io": "read and write graphs in 13 file formats",
+  "graph-format": "a compact graph snapshot over typed arrays",
+  "graph-samples": "seeded graph generators and classic sample datasets",
+  "webgpu-graph-algorithms": "graph algorithms and layouts on the GPU with WebGPU",
+  "cytoscape-extensions": "graphty layouts and algorithms for Cytoscape.js",
+};
+// packages with their own docs page or Storybook get their own favicon; cytoscape-extensions uses the plain mark's
+export const FAVICON_PACKAGES = ["graphty-element", "layout", "algorithms", "graph-io"];
 
 // ---------- Cytoscape.js co-brand (K2, heart H1). Their logo is embedded unmodified (hidden letters removed). ----------
 const CY = fs.readFileSync(path.join(HERE, "ref/cytoscape-js-logo.svg"), "utf8")
@@ -226,6 +244,55 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   };
   write("icons/social/open-graph-1200x630.svg", social(1200, 630), { out: [["icons/social/open-graph-1200x630.png", 1200, 630]] });
   write("icons/social/github-social-preview-1280x640.svg", social(1280, 640), { out: [["icons/social/github-social-preview-1280x640.png", 1280, 640]] });
+
+  // avatar: the mark on a full-bleed ink square, small enough to survive a circle crop (GitHub, npm, Gravatar, Pushover)
+  write("icons/avatar/graphty-avatar.svg", svgDoc(0, 0, 64, 64, appTile(L, "v", 0, AVATAR_SCALE)), { bg: C.tile, out: [72, 512, 1024].map((s) => [`icons/avatar/graphty-avatar-${s}.png`, s, s]) });
+
+  // package social cards: a lockup fitted to the card, a tagline under it
+  const card = (W, H, lk, text) => {
+    const vb = lk.match(/viewBox="([^"]+)"/)[1].split(" ").map(Number), s = Math.min(3.2, (W - 192) / vb[2]);
+    const x0 = (W - vb[2] * s) / 2, y0 = H / 2 - 32 * s - 30, tag = plain("400", text, 0, 0, 34, C.inkDark);
+    const inner = lk.replace(/^<svg[^>]*>|<\/svg>\s*$/g, "");
+    return svgDoc(0, 0, W, H, `<rect width="${W}" height="${H}" fill="${C.text}"/><svg x="${f(x0)}" y="${f(y0)}" width="${f(vb[2] * s)}" height="${f(64 * s)}" viewBox="${vb.join(" ")}">${inner}</svg>` +
+      `<g transform="translate(${f((W - tag.w) / 2)} ${f(y0 + 64 * s + 70)})">${tag.svg}</g>`);
+  };
+  const cards = (dir, stem, lk, text) => {
+    for (const [W, H, kind] of [[1200, 630, "open-graph"], [1280, 640, "github-social-preview"]]) {
+      const rel = `${dir}/${stem}-${kind}-${W}x${H}`;
+      write(`${rel}.svg`, card(W, H, lk, text), { bg: C.text, out: [[`${rel}.png`, W, H]] });
+    }
+  };
+  for (const [pkg, m] of Object.entries(PACKAGES)) {
+    const id = pkg.replace(/[^a-z]/g, "");
+    cards(`child-brands/${pkg}/social`, `graphty-${pkg}`, m.draw ? lockup(D, m.draw(D, id), m.name, m.left) : lockup(D, gMark(D), m.name), TAGLINES[pkg]);
+  }
+
+  // package favicons (switching to dark colors like the main favicon) and iOS icons, for packages with their own docs or Storybook
+  for (const pkg of FAVICON_PACKAGES) {
+    const m = PACKAGES[pkg], id = pkg.replace(/[^a-z]/g, ""), dir = `child-brands/${pkg}/icons`;
+    fs.mkdirSync(path.join(OUT, dir), { recursive: true });
+    fs.writeFileSync(path.join(OUT, dir, "favicon.svg"), darkSwitch(svgDoc(0, 0, 64, 64, m.draw(L, id))) + "\n"); // not run through svgo, as above
+    files.push({ svg: `${dir}/favicon.svg`, out: [16, 32, 48].map((s) => [`${dir}/favicon-${s}.png`, s, s]) });
+    write(`${dir}/app-icon-square.svg`, svgDoc(0, 0, 64, 64, tileOf(m.draw({ ink: "#ffffff", accent: C.lime }, id), 0.72)), { bg: C.tile, out: [[`${dir}/apple-touch-icon.png`, 180, 180]] });
+  }
+
+  // on-white copies: the color-on-light artwork with a white rectangle and 6% margin baked in, for pages that do not switch
+  // with dark mode (GitHub and npm READMEs, this guide); PNGs at the widths READMEs show them, and twice that
+  const onWhite = (src, widths) => {
+    const s = fs.readFileSync(path.join(OUT, src), "utf8"), vb = s.match(/viewBox="([^"]+)"/)[1].split(" ").map(Number), pad = +(0.06 * vb[2] + 1e-9).toFixed(1);
+    const [x, y, w, h] = [vb[0] - pad, vb[1] - pad, vb[2] + 2 * pad, vb[3] + 2 * pad].map((n) => +n.toFixed(1));
+    const name = path.basename(src), rel = `guide/on-white/${name}`;
+    fs.mkdirSync(path.join(OUT, "guide/on-white"), { recursive: true });
+    fs.writeFileSync(path.join(OUT, rel), s.replace(/^<svg[^>]*>/, `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="${x} ${y} ${w} ${h}"><rect x="${x}" y="${y}" width="${w}" height="${h}" fill="#ffffff"/>`));
+    files.push({ svg: rel, bg: "#ffffff", out: widths.map((wd) => [`guide/on-white/png/${name.replace(/\.svg$/, `-${wd}w.png`)}`, wd, 0]) });
+  };
+  const V = "color-on-light";
+  onWhite(`logo/lockup/horizontal/svg/${V}/graphty-lockup-${V}.svg`, [400, 800]);
+  onWhite(`logo/lockup/stacked/svg/${V}/graphty-lockup-stacked-${V}.svg`, [200, 400]);
+  onWhite(`logo/mark/svg/${V}/graphty-mark-${V}.svg`, [64, 128]);
+  onWhite(`logo/wordmark/svg/${V}/graphty-wordmark-${V}.svg`, [200, 400]);
+  for (const pkg of Object.keys(PACKAGES)) onWhite(`child-brands/${pkg}/lockup/svg/${V}/graphty-${pkg}-lockup-${V}.svg`, [200, 400, 800]);
+  onWhite(`co-brand/cytoscape/lockup/svg/${V}/graphty-loves-cytoscape-lockup-${V}.svg`, [800, 1600]);
   fs.mkdirSync(WORK, { recursive: true });
   fs.writeFileSync(path.join(WORK, "render-list.json"), JSON.stringify(files.map((x) => {
     if (x.out) return x;

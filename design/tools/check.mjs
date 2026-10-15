@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
+import { FAVICON_PACKAGES } from "./build.mjs";
 const req = createRequire(import.meta.url);
 const { parseSvg } = req("svgo/lib/parser.js");
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
@@ -51,8 +52,21 @@ const PKGS = ["algorithms", "cytoscape-extensions", "graph-format", "graph-io", 
 const have = fs.readdirSync(path.join(OUT, "child-brands")).sort();
 if (have.join() !== PKGS.join()) bad.push(`child-brands holds ${have.join(", ")}`);
 for (const f of all) if (/co-brand\/.*\/(white|black)\//.test(f)) bad.push(`${f}: one-color co-brand file`);
-const ico = fs.readFileSync(path.join(OUT, "icons/favicon/favicon.ico"));
-if (ico.readUInt16LE(4) !== 3) bad.push("favicon.ico does not hold 3 sizes");
+// the avatar and every package's social cards, on-white copy and (where it has one) favicon set
+const more = ["icons/avatar/graphty-avatar.svg", ...[72, 512, 1024].map((s) => `icons/avatar/graphty-avatar-${s}.png`),
+  "guide/on-white/png/graphty-lockup-color-on-light-400w.png", "guide/on-white/png/graphty-mark-color-on-light-128w.png"];
+for (const pkg of PKGS) more.push(`child-brands/${pkg}/social/graphty-${pkg}-open-graph-1200x630.png`, `child-brands/${pkg}/social/graphty-${pkg}-github-social-preview-1280x640.png`,
+  `guide/on-white/graphty-${pkg}-lockup-color-on-light.svg`, ...[200, 400, 800].map((w) => `guide/on-white/png/graphty-${pkg}-lockup-color-on-light-${w}w.png`));
+for (const pkg of FAVICON_PACKAGES) more.push(...["favicon.svg", "favicon.ico", "favicon-16.png", "favicon-32.png", "favicon-48.png", "apple-touch-icon.png"].map((n) => `child-brands/${pkg}/icons/${n}`));
+for (const r of more) if (!fs.existsSync(path.join(OUT, r))) bad.push(`missing ${r}`);
+// GitHub refuses a social preview of 1 MB or more
+for (const f of all.filter((x) => /(github-social-preview|open-graph)-\d+x\d+\.png$/.test(x))) if (fs.statSync(f).size >= 1e6) bad.push(`${f}: 1 MB or more`);
+// every favicon.ico holds 16, 32 and 48
+for (const p of all.filter((x) => x.endsWith("favicon.ico"))) {
+  const ico = fs.readFileSync(p), sizes = [];
+  for (let i = 0; i < ico.readUInt16LE(4); i++) sizes.push(ico[6 + 16 * i] || 256);
+  if (sizes.sort((x, y) => x - y).join() !== "16,32,48") bad.push(`${p} holds ${sizes.join(", ")}, not 16, 32, 48`);
+}
 console.log(`${all.length} files, ${all.filter((x) => x.endsWith(".svg")).length} svg, ${all.filter((x) => x.endsWith(".png")).length} png`);
 if (bad.length) { console.log(bad.join("\n")); process.exit(1); }
 console.log("all checks pass");

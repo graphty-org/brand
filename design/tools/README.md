@@ -32,10 +32,10 @@ Chromium or font stack may change PNG bytes without changing what they show.
 | File                   | What it does                                                                                                              |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | `build.sh`             | Runs every step below in order                                                                                           |
-| `build.mjs`            | The geometry of the mark and every package mark, the wordmark (Outfit set as outlines), lockups, the co-brand and icons; writes the SVGs and the list of PNGs to render |
+| `build.mjs`            | The geometry of the mark and every package mark, the wordmark (Outfit set as outlines), lockups, the co-brand, icons, the avatar, the social cards (the kit's and each package's), package favicons and the on-white copies; writes the SVGs and the list of PNGs to render |
 | `build2.mjs`           | The color tokens (`colors/tokens.json`, `tokens.css`), the palette sheet and the guide diagrams                          |
 | `render.mjs`           | Renders the listed SVGs to transparent PNGs in headless Chromium                                                         |
-| `check.mjs`            | Checks the kit: every SVG parses and is self-contained, every PNG exists at its size with transparency, every document link resolves |
+| `check.mjs`            | Checks the kit: every SVG parses and is self-contained, every PNG exists at its size with transparency, social images are under 1 MB, every favicon.ico holds 16, 32 and 48, every document link resolves |
 | `contact-sheet.sh`     | Rebuilds `design/explorations-contact-sheet.png` from the images in `design/explorations/`                               |
 | `fonts/`               | Outfit 400 and 500 as static instances of the variable font in `fonts/` at the root, which the wordmark is drawn from (SIL Open Font License, `fonts/OFL.txt`) |
 | `ref/cytoscape-js-logo.svg` | The Cytoscape.js logo as Cytoscape.js publishes it, embedded unmodified in the co-brand                             |
@@ -47,5 +47,6 @@ The render lists are written to `tmp/` at the repository root, which git ignores
 - **A color**: edit `C` and `VARIANTS` at the top of `build.mjs` (and the swatch descriptions in
   `build2.mjs`), rebuild, and update the color table in the brand guide.
 - **A package mark**: edit its entry in `PACKAGES` in `build.mjs`. A new package needs only a new
-  entry; its lockups, wordmarks and PNGs follow.
+  entry and a line in `TAGLINES` (its social cards); its lockups, wordmarks, social cards, on-white
+  copy and PNGs follow. Add it to `FAVICON_PACKAGES` when it gets its own docs page or Storybook.
 - **The mark**: the geometry is `G` in `build.mjs` (centers and radii on a 64-unit grid).
