@@ -36,10 +36,10 @@ files.
 
 | Lockup     | Preview                                                                                           | Use it for                                                                                      |
 | ---------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Horizontal | ![horizontal](logo/lockup/horizontal/png/color-on-light/graphty-lockup-color-on-light-400w.png)   | The default: site headers, READMEs, slides, documents, anywhere there is more width than height |
-| Stacked    | ![stacked](logo/lockup/stacked/png/color-on-light/graphty-lockup-stacked-color-on-light-200w.png) | Square or tall spaces: title slides, posters, stickers, profile cards                           |
-| Mark       | ![mark](logo/mark/png/color-on-light/graphty-mark-color-on-light-64.png)                          | Small or square places: favicons, avatars, app icons, and anywhere the name is already shown    |
-| Wordmark   | ![wordmark](logo/wordmark/png/color-on-light/graphty-wordmark-color-on-light-200w.png)            | Only where the mark already appears nearby, such as a footer under a large mark                 |
+| Horizontal | <img src="guide/on-white/graphty-lockup-color-on-light.svg" alt="horizontal" width="400">   | The default: site headers, READMEs, slides, documents, anywhere there is more width than height |
+| Stacked    | <img src="guide/on-white/graphty-lockup-stacked-color-on-light.svg" alt="stacked" width="200"> | Square or tall spaces: title slides, posters, stickers, profile cards                           |
+| Mark       | <img src="guide/on-white/graphty-mark-color-on-light.svg" alt="mark" width="64">                          | Small or square places: favicons, avatars, app icons, and anywhere the name is already shown    |
+| Wordmark   | <img src="guide/on-white/graphty-wordmark-color-on-light.svg" alt="wordmark" width="200">            | Only where the mark already appears nearby, such as a footer under a large mark                 |
 
 Each lockup comes in four versions:
 
@@ -154,14 +154,14 @@ graphty mark plus one detail that says what the package does.
 
 | Package                 | Package mark                                    | Lockup                                                                                                                                           |
 | ----------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| graphty-element         | the g between angle brackets: a web component   | ![element](child-brands/graphty-element/lockup/png/color-on-light/graphty-graphty-element-lockup-color-on-light-200w.png)                        |
-| layout                  | the g in a selection box with four lime handles | ![layout](child-brands/layout/lockup/png/color-on-light/graphty-layout-lockup-color-on-light-200w.png)                                           |
-| algorithms              | a traced shortest path and a halo on the bowl   | ![algorithms](child-brands/algorithms/lockup/png/color-on-light/graphty-algorithms-lockup-color-on-light-200w.png)                               |
-| graph-io                | the g stepping out of a document page           | ![graph-io](child-brands/graph-io/lockup/png/color-on-light/graphty-graph-io-lockup-color-on-light-200w.png)                                     |
-| graph-format            | the g between square brackets: an array         | ![graph-format](child-brands/graph-format/lockup/png/color-on-light/graphty-graph-format-lockup-color-on-light-200w.png)                         |
-| graph-samples           | the g on the front card of a stack of three     | ![graph-samples](child-brands/graph-samples/lockup/png/color-on-light/graphty-graph-samples-lockup-color-on-light-200w.png)                      |
-| webgpu-graph-algorithms | the g on a chip with pins                       | ![webgpu](child-brands/webgpu-graph-algorithms/lockup/png/color-on-light/graphty-webgpu-graph-algorithms-lockup-color-on-light-200w.png)         |
-| cytoscape-extensions    | the plain graphty mark                          | ![cytoscape-extensions](child-brands/cytoscape-extensions/lockup/png/color-on-light/graphty-cytoscape-extensions-lockup-color-on-light-200w.png) |
+| graphty-element         | the g between angle brackets: a web component   | <img src="guide/on-white/graphty-graphty-element-lockup-color-on-light.svg" alt="element" width="200">                        |
+| layout                  | the g in a selection box with four lime handles | <img src="guide/on-white/graphty-layout-lockup-color-on-light.svg" alt="layout" width="200">                                           |
+| algorithms              | a traced shortest path and a halo on the bowl   | <img src="guide/on-white/graphty-algorithms-lockup-color-on-light.svg" alt="algorithms" width="200">                               |
+| graph-io                | the g stepping out of a document page           | <img src="guide/on-white/graphty-graph-io-lockup-color-on-light.svg" alt="graph-io" width="200">                                     |
+| graph-format            | the g between square brackets: an array         | <img src="guide/on-white/graphty-graph-format-lockup-color-on-light.svg" alt="graph-format" width="200">                         |
+| graph-samples           | the g on the front card of a stack of three     | <img src="guide/on-white/graphty-graph-samples-lockup-color-on-light.svg" alt="graph-samples" width="200">                      |
+| webgpu-graph-algorithms | the g on a chip with pins                       | <img src="guide/on-white/graphty-webgpu-graph-algorithms-lockup-color-on-light.svg" alt="webgpu" width="200">         |
+| cytoscape-extensions    | the plain graphty mark                          | <img src="guide/on-white/graphty-cytoscape-extensions-lockup-color-on-light.svg" alt="cytoscape-extensions" width="200"> |
 
 The graphty-element lockup reads "graphty element".
 
@@ -179,7 +179,7 @@ Cytoscape.js". It comes as a symbol and as a lockup with the package name, in co
 `color-on-light` and `color-on-dark`. There are no white or black versions; where only one color
 is possible, use the plain cytoscape-extensions lockup.
 
-![The Cytoscape co-brand lockup](co-brand/cytoscape/lockup/png/color-on-light/graphty-loves-cytoscape-lockup-color-on-light-800w.png)
+<img src="guide/on-white/graphty-loves-cytoscape-lockup-color-on-light.svg" alt="The Cytoscape co-brand lockup" width="800">
 
 Rules:
 
