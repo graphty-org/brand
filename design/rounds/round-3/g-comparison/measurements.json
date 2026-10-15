@@ -1,0 +1,62 @@
+{
+  "r1": {
+    "bowlOuter": 28,
+    "bowlHole": 14,
+    "loopOuter": 23,
+    "loopHole": 9,
+    "ratio": 1.31,
+    "offset": 7,
+    "tilt": 14.28,
+    "edgeVisible": 2.88,
+    "earVisible": 6.05,
+    "earAngle": 30.58,
+    "amberDia": 11,
+    "ear": 5,
+    "bbox": "13-54.5 x 3.5-61"
+  },
+  "zigzag": {
+    "bowlOuter": 27,
+    "bowlHole": 13,
+    "loopOuter": 26,
+    "loopHole": 12,
+    "ratio": 1.05,
+    "offset": -11,
+    "tilt": -22.93,
+    "edgeVisible": 1.73,
+    "earVisible": 5.23,
+    "earAngle": 21.8,
+    "amberDia": 11,
+    "ear": 6,
+    "bbox": "7-59 x 8.5-62"
+  },
+  "classic": {
+    "bowlOuter": 23,
+    "bowlHole": 9,
+    "loopOuter": 27,
+    "loopHole": 13,
+    "ratio": 0.8,
+    "offset": -5.5,
+    "tilt": -10.56,
+    "edgeVisible": 5.01,
+    "earVisible": 3.74,
+    "earAngle": 15.38,
+    "amberDia": 11,
+    "ear": 6,
+    "bbox": "13.5-58 x 6-60.5"
+  },
+  "best": {
+    "bowlOuter": 26,
+    "bowlHole": 12,
+    "loopOuter": 26,
+    "loopHole": 12,
+    "ratio": 1,
+    "offset": -8,
+    "tilt": -14.93,
+    "edgeVisible": 5.05,
+    "earVisible": 4.96,
+    "earAngle": 23.36,
+    "amberDia": 12,
+    "ear": 6,
+    "bbox": "8-57 x 3-61.5"
+  }
+}

@@ -1,0 +1,7 @@
+m | ball-and-stick molecule fragment | graph nodes with edges | none
+h | triangular network of three nodes | cyclopropane-like ring | A (maybe)
+q | central atom with three bonds (trigonal) | hub-and-spoke network / share icon | none
+w | ball-and-stick molecule fragment | male symbol / key shape | none
+z | triangle of three connected nodes | three-membered ring with one open atom | A (faintly)
+k | chain of linked atoms / nodes | music note or key | none
+t | linked nodes / molecule fragment | male symbol or key | maybe "g" or "f"

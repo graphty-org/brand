@@ -1,0 +1,107 @@
+[
+  {
+    "id": "1-indigo-amber",
+    "light": {
+      "ink": "#1b1b2b",
+      "primary": "#4f46e5",
+      "accent": "#f5a000"
+    },
+    "dark": {
+      "ink": "#f2f2f7",
+      "primary": "#8b93fa",
+      "accent": "#ffb81f"
+    },
+    "contrast": {
+      "inkW": 16.96,
+      "priW": 6.29,
+      "accW": 2.12,
+      "inkD": 16.92,
+      "priD": 6.88,
+      "accD": 10.91
+    }
+  },
+  {
+    "id": "2-teal-coral",
+    "light": {
+      "ink": "#10272b",
+      "primary": "#0b6b70",
+      "accent": "#ec5a44"
+    },
+    "dark": {
+      "ink": "#eef5f5",
+      "primary": "#5fd0c8",
+      "accent": "#ff8f7d"
+    },
+    "contrast": {
+      "inkW": 15.59,
+      "priW": 6.27,
+      "accW": 3.44,
+      "inkD": 17.1,
+      "priD": 10.2,
+      "accD": 8.52
+    }
+  },
+  {
+    "id": "3-ink-lime",
+    "light": {
+      "ink": "#14161f",
+      "primary": "#2a3045",
+      "accent": "#8fbf00"
+    },
+    "dark": {
+      "ink": "#f2f3f7",
+      "primary": "#c9cfe0",
+      "accent": "#c4f23a"
+    },
+    "contrast": {
+      "inkW": 18.04,
+      "priW": 13.07,
+      "accW": 2.18,
+      "inkD": 17.03,
+      "priD": 12.13,
+      "accD": 14.49
+    }
+  },
+  {
+    "id": "4-graphite-magenta",
+    "light": {
+      "ink": "#1c1d22",
+      "primary": "#3a3f4b",
+      "accent": "#d61f69"
+    },
+    "dark": {
+      "ink": "#f2f2f4",
+      "primary": "#c3c8d3",
+      "accent": "#ff5c9a"
+    },
+    "contrast": {
+      "inkW": 16.82,
+      "priW": 10.54,
+      "accW": 4.93,
+      "inkD": 16.89,
+      "priD": 11.26,
+      "accD": 6.52
+    }
+  },
+  {
+    "id": "5-two-blue-depth",
+    "light": {
+      "ink": "#0f1733",
+      "primary": "#1e3a8a",
+      "accent": "#1d93cc"
+    },
+    "dark": {
+      "ink": "#eef2ff",
+      "primary": "#7ea2ff",
+      "accent": "#7dd3fc"
+    },
+    "contrast": {
+      "inkW": 17.64,
+      "priW": 10.36,
+      "accW": 3.44,
+      "inkD": 16.89,
+      "priD": 7.64,
+      "accD": 11.33
+    }
+  }
+]

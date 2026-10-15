@@ -1,0 +1,15 @@
+{
+    "name": "graphty-brand-tools",
+    "private": true,
+    "description": "Builds the graphty brand kit from code: SVGs, PNGs, favicon, tokens and guide diagrams.",
+    "type": "module",
+    "scripts": {
+        "build": "./build.sh",
+        "check": "node check.mjs"
+    },
+    "dependencies": {
+        "opentype.js": "1.3.4",
+        "playwright": "1.57.0",
+        "svgo": "3.3.5"
+    }
+}

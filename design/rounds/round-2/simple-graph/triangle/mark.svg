@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="256" height="256"><title>graphty</title>
+<mask id="g77" maskUnits="userSpaceOnUse" x="-20" y="-20" width="104" height="104"><rect x="-20" y="-20" width="104" height="104" fill="#fff"/><circle cx="18" cy="45" r="14" fill="#000"/></mask><g mask="url(#g77)"><line x1="18" y1="45" x2="38" y2="7.5" stroke="#4f46e5" stroke-width="6" stroke-linecap="round"/><line x1="18" y1="45" x2="55" y2="35" stroke="#4f46e5" stroke-width="6" stroke-linecap="round"/><line x1="38" y1="7.5" x2="55" y2="35" stroke="#4f46e5" stroke-width="6" stroke-linecap="round"/><circle cx="38" cy="7.5" r="5" fill="#4f46e5"/><circle cx="55" cy="35" r="7" fill="#4f46e5"/></g><circle cx="18" cy="45" r="11" fill="#f5a000"/>
+</svg>

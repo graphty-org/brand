@@ -1,0 +1,11 @@
+graphty: The app is the thing you open, so it is the only member that gets the launcher tile: the full mark knocked out of a filled app-icon square.
+graphty-element: A web component is an HTML tag, so the g is written between the tag's angle brackets: <g>.
+layout: Graphty's layouts treat edges as springs that pull nodes into place, so the ear edge becomes a spring and its node is pulled further out.
+algorithms: An algorithm computes an answer over the graph, so the route it found lights up: from the focus node through the graph to the far node.
+webgpu-graph-algorithms: The same lit route as algorithms, mounted on a chip: the same computation, run on the GPU.
+graph-io: graph-io reads and writes files, so the g sits on a page with its ear edge crossing out through the page's edge: the graph moving into and out of a file.
+graph-format: graph-format stores a graph as flat typed arrays, so the g is written inside an array's square brackets: [g].
+graph-samples: graph-samples hands you ready-made graphs, so the g comes with a second copy stacked behind it: one of a set.
+cytoscape-extensions: cytoscape-extensions plugs graphty into Cytoscape.js, so the node at the end of the ear edge becomes a plug.
+compact-mantine: compact-mantine is the set of UI controls around a graph, so the g sits tight inside a control's rounded outline, like a dense button.
+visual-review: visual-review captures screenshots for review, so the g is framed by a camera viewfinder's four corners.

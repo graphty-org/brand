@@ -1,0 +1,7 @@
+q | molecule / network node | hub with three spokes | none
+m | chain of connected nodes | share icon / linked rings | possibly "g" or "8"
+h | triangle of three connected nodes | share icon | possibly "A" or delta
+w | linked nodes / chain | male gender symbol / key | "g" or "8"
+z | triangle of connected nodes | share icon / molecule | possibly "A" or "o"
+k | linked nodes / chain | key / bicycle-ish link | "g" or "8"
+t | linked nodes / chain | male gender symbol / flag | "g" or "8"

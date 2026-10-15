@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Graphty font study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Outfit:wght@400;500;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700&family=Inter:wght@400;500;700&family=Lexend:wght@400;500;700&family=Rubik:wght@400;500;700&family=Onest:wght@400;500;700&family=Source+Sans+3:wght@400;500;700&family=Manrope:wght@400;700&family=Space+Grotesk:wght@400;600&family=JetBrains+Mono:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+:root{--bg:#f6f6f9;--card:#fff;--fg:#1b1b2b;--muted:#5b5b70;--line:#dcdce6;--ind:#4f46e5;--amb:#f29d0b;--ok:#1d7a3a;--bad:#b3261e}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0f14;--card:#171821;--fg:#ececf3;--muted:#a3a3b8;--line:#2b2c3a;--ok:#6fd08c;--bad:#ff8a80}}
+:root[data-theme="dark"]{--bg:#0e0f14;--card:#171821;--fg:#ececf3;--muted:#a3a3b8;--line:#2b2c3a;--ok:#6fd08c;--bad:#ff8a80}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,sans-serif;padding:24px 16px}
+main{max-width:1240px;margin:0 auto}
+h1{font-size:24px;margin:0 0 4px}h2{font-size:18px;margin:0}
+p{margin:6px 0;max-width:820px}.muted{color:var(--muted)}
+.top3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin:16px 0 28px}
+.top3 div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.font{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin:0 0 16px}
+.font.rej{opacity:.85;border-style:dashed}
+.head{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;margin-bottom:10px}
+.lic{font-size:12px;color:var(--muted)}.verdict{font-size:13px}
+.grid{display:grid;grid-template-columns:1.25fr 1fr 0.8fr;gap:10px}
+@media (max-width:900px){.grid{grid-template-columns:1fr}}
+.tile{border-radius:8px;padding:14px 16px;display:flex;flex-direction:column;gap:12px;justify-content:center;min-width:0;overflow:hidden}
+.L{background:#fff;color:#1b1b2b;border:1px solid #e6e6ee}.D{background:#14151c;color:#f2f2f7}
+.D{--ind:#8b93fa;--amb:#ffb81f}
+.lk{display:flex;align-items:center;gap:.28em;white-space:nowrap;line-height:1}
+.lk svg{height:1.5em;width:1.5em;flex:none}
+.w{font-weight:700;letter-spacing:-.01em}.pk{font-weight:400;color:var(--ind);margin-left:.18em}
+.mono{font-family:'JetBrains Mono',monospace;font-weight:400;font-size:.82em;color:var(--ind);margin-left:.3em}
+.big{font-size:44px}.mid{font-size:28px}.nav{font-size:18px}.tiny{font-size:12px}
+.small{display:flex;flex-direction:row;flex-wrap:wrap;gap:14px 22px;align-items:center}
+.gy{font-size:120px;line-height:1;font-weight:700;position:relative;padding:4px 0 26px;white-space:nowrap}
+.gy span{color:var(--amb)}
+.para{font-size:13px;line-height:1.45;max-width:30em}
+</style></head><body><main>
+<h1>Font study for the graphty wordmark</h1>
+<p class="muted">Each row sets "graphty" in one open-licensed sans serif (bold, 700) beside the round 2 option 2A mark, then the package-name pairing two ways: the same family at regular weight in indigo, and JetBrains Mono. The strip below and each row's right column blow up the g and the y, the two letters the round 2 fonts got wrong. Bottom rows are the two rejected round 2 fonts, for reference. All fonts are from Google Fonts under the SIL Open Font License 1.1.</p>
+<p class="muted">What makes Amazon Ember work, and what each row is judged on: humanist proportions (letters of differing widths, not all circles), open apertures, a single-story g, soft or rounded terminals, a generous x-height, and a y drawn as a plain v with a tail, not the squared u-shape of Space Grotesk and Onest.</p>
+
+<div class="top3">
+<div><b>1. Figtree</b><br>Closest to Ember: single-story g with a round open tail, soft terminals, plain humanist proportions. Its x-height lines up with the mark's two rings, so the word and the mark read as one unit. Stays crisp at 12 px. Pair it with Figtree Regular for package names.</div>
+<div><b>2. Nunito Sans</b><br>The warmest of the set: rounded joins, open apertures, a single-story g with a full curved tail. Very readable at nav and body sizes. The risk is that it feels a little generic; the mark has to carry the identity.</div>
+<div><b>3. Plus Jakarta Sans</b><br>The most polished: tall x-height, compact width, single-story g. Reads more "modern startup" than Ember, and its body text sets tight at small sizes, but the wordmark itself is the sharpest-looking of the three without being sharp-cornered.</div>
+</div>
+<p class="muted"><b>Package-name pairing:</b> the same family at Regular in the accent color reads as one brand and is the recommendation for logos and lockups. JetBrains Mono (SIL OFL 1.1) says "npm package" clearly and suits docs, README headers and code contexts; it is the alternative, not the default.</p>
+<h2 style="margin:0 0 8px">The g and y side by side</h2><div id="strip" class="font" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px"></div>
+<div id="rows"></div>
+</main>
+<script>
+const MARK = '<svg viewBox="0 0 64 64" aria-hidden="true"><line x1="40.28" y1="19.29" x2="53.5" y2="14" stroke="var(--ind)" stroke-width="6"/><line x1="27.1" y1="32.21" x2="23.7" y2="40.25" stroke="var(--ind)" stroke-width="6"/><circle cx="31" cy="23" r="10" fill="none" stroke="var(--ind)" stroke-width="7"/><circle cx="20" cy="49" r="9.5" fill="none" stroke="var(--ind)" stroke-width="7"/><circle cx="53.5" cy="14" r="5.5" fill="var(--amb)"/></svg>';
+const FONTS = [
+ ["Figtree","Top pick. Single-story g with a round tail, soft terminals, plain humanist shapes; nearest open font to Ember.","ok"],
+ ["Plus Jakarta Sans","Third. Tall x-height, compact, polished; body text sets tight at small sizes.","ok"],
+ ["DM Sans","No. Its bold g is two-story, which competes with the mark (itself a two-story g).","bad"],
+ ["Nunito Sans","Second. Warmest and most readable; rounded joins, curved g tail; a little generic.","ok"],
+ ["Inter","Good for UI, weak as a logo: the most common sans on the web, so it carries no identity.","mid"],
+ ["Onest","No. Its u-shaped y is the same move that made Space Grotesk read as 1970s sci-fi.","bad"],
+ ["Outfit","Mixed. Pure geometric circles; reads wide and a bit cold beside the mark.","mid"],
+ ["Rubik","Mixed. Rounded corners echo the ring nodes, but it reads heavy and playful, more toy than tool.","mid"],
+ ["Lexend","Mixed. Very legible but wide; the long lockup and straight y tail feel flat.","mid"],
+ ["Source Sans 3","No. A two-story g fights the mark, which is itself a two-story g drawn as a graph.","bad"],
+ ["Manrope","Rejected in round 2 (option 2A). Shown for reference: the g and y end in hard straight cuts.","bad"],
+ ["Space Grotesk","Rejected in round 2 (options 2B and 2E). Shown for reference: the squared g and y read as 1970s sci-fi.","bad"],
+];
+const lock = (f, cls, pkg, mono) => `<div class="lk ${cls}" style="font-family:'${f}'">${MARK}<span class="w">graphty</span>${pkg ? (mono ? `<span class="mono">${pkg}</span>` : `<span class="pk">${pkg}</span>`) : ""}</div>`;
+document.getElementById("strip").innerHTML = FONTS.map(([f]) => `<div class="tile L" style="align-items:center;gap:4px"><div style="padding-bottom:16px;font:700 72px/1 '${f}';white-space:nowrap">gy<span style="color:var(--amb)">ty</span></div><div class="lic">${f}</div></div>`).join("");
+document.getElementById("rows").innerHTML = FONTS.map(([f, v, k], i) => `
+<section class="font${i >= 10 ? " rej" : ""}" id="${f.replace(/ /g, "-")}">
+ <div class="head"><h2>${f}</h2><span class="lic">SIL OFL 1.1, Google Fonts, weights 700 and 400</span><span class="verdict" style="color:var(--${k === "ok" ? "ok" : k === "bad" ? "bad" : "muted"})">${v}</span></div>
+ <div class="grid">
+  <div class="tile L">${lock(f, "big")}${lock(f, "mid", "layout")}${lock(f, "mid", "algorithms", true)}</div>
+  <div class="tile D">${lock(f, "big")}${lock(f, "mid", "graph-io")}${lock(f, "mid", "element", true)}</div>
+  <div class="tile L"><div class="gy" style="font-family:'${f}'">g<span>y</span></div></div>
+ </div>
+ <div class="tile L small" style="margin-top:10px">${lock(f, "nav")}${lock(f, "nav", "layout")}${lock(f, "tiny")}${lock(f, "tiny", "graph-samples")}<div class="para" style="font-family:'${f}'">graphty-element renders large graphs in 2D and 3D, with layouts, algorithms and WebGPU, in a single tag.</div></div>
+</section>`).join("");
+</script></body></html>

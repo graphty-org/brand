@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="256" height="256"><title>layout (graphty library badge)</title>
+<circle cx="28" cy="36" r="21" fill="none" stroke="#4a6cf7" stroke-width="7"/>
+<path d="M44.55 23.07L52 9" stroke="#4a6cf7" stroke-width="7" stroke-linecap="round"/>
+<circle cx="52" cy="9" r="6.5" fill="#f5a000"/>
+<path fill="#4a6cf7" d="M27.47 42.80L19.14 42.80L19.14 29.12L21.43 29.12L21.43 40.65L27.47 40.65L27.47 42.80ZM32.28 47.36L30.13 47.36L31.82 42.72L27.67 32.54L30.06 32.54L32.93 39.88L35.71 32.54L38.00 32.54L32.28 47.36Z"/>
+</svg>

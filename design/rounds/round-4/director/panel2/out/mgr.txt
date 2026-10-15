@@ -1,0 +1,7 @@
+w | connected dots / molecule | male symbol | maybe "o" and "b"
+m | connected dots / molecule | share icon | maybe "o"
+q | network hub / molecule | radiation sign or fidget spinner | maybe "o"
+h | triangle of dots / network | share icon | maybe "A"
+z | triangle of dots / network | share icon | "A", maybe "o"
+k | connected dots / molecule | key | "o", maybe "b" or "g"
+t | connected dots / molecule | male symbol / music note | "o", maybe "g" or "b"

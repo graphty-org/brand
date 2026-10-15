@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="256" height="256"><title>graphty app</title>
+<rect x="0" y="0" width="64" height="64" rx="14" fill="#4a6cf7"/><g transform="translate(6.4 7) scale(0.8)"><g fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="22" cy="21.5" r="10.5"/>
+  <path d="M49 38.5H11.5A18.75 15.5 0 0 0 49 38.5Z"/>
+  <path d="M30.27 15.04L41 8.5"/>
+</g>
+<circle cx="41" cy="8.5" r="6.5" fill="#ffb020"/></g>
+</svg>

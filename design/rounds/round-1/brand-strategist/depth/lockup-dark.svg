@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 64" width="460" height="128">
+<style>@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&amp;display=block'); text{font-family:'Space Grotesk',sans-serif}</style>
+<rect x="-8" y="-8" width="260" height="80" fill="#0d1117"/><polygon points="26.04,50.53 45.86,30.7 40.14,23.3 15.96,37.47" fill="#8aa4ff"/><polygon points="46.3,29.68 57.92,12.56 54.08,9.44 39.7,24.32" fill="#6f86e0"/><polygon points="39.99,30.01 55.06,42.94 58.94,39.06 46.01,23.99" fill="#6f86e0"/><circle cx="21" cy="44" r="15" fill="#8aa4ff"/><circle cx="43" cy="27" r="8.5" fill="#8aa4ff"/><circle cx="56" cy="11" r="4.5" fill="#6f86e0"/><circle cx="57" cy="41" r="5" fill="#6f86e0"/>
+<text x="76" y="43" font-size="38" font-weight="600" letter-spacing="-1" fill="#f5f7ff">graphty</text>
+</svg>

@@ -1,0 +1,543 @@
+{
+ "Afacad": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "AfacadFlux": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Albert-Sans": {
+  "g": "g",
+  "alts": [
+   "ss02:g.ss02"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Alegreya-Sans": {
+  "g": "g",
+  "alts": [
+   "ss02:triagup (Arrows, triangles and circles)"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Anuphan": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Archivo": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Atkinson-Hyperlegible-Next": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Bai-Jamjuree": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Be-Vietnam-Pro": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Belleza": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Bellota": {
+  "g": "g",
+  "alts": [
+   "salt:g.ss01",
+   "ss01:g.ss01"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Bricolage-Grotesque": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Commissioner": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "DM-Sans": {
+  "g": "g",
+  "alts": [
+   "ss03:g.ss03 (Alternative g)"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Didact-Gothic": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Dosis": {
+  "g": "g",
+  "alts": [
+   "salt:g.ss03",
+   "ss03:g.ss03"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Encode-Sans": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Epilogue": {
+  "g": "g",
+  "alts": [
+   "salt:g.ss01",
+   "ss01:g.ss01"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Familjen-Grotesk": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Federo": {
+  "g": "g",
+  "alts": [],
+  "license": "Copyright (c) 2011, Olexa M. Volochay,\r\nwith Reserved Font N"
+ },
+ "Figtree": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Fira-Sans": {
+  "g": "g",
+  "alts": [
+   "salt:g.ss04",
+   "ss04:g.ss04"
+  ],
+  "license": "Licensed under the Open Font License, version 1.1 or later"
+ },
+ "Funnel-Sans": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Gabarito": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Gantari": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Geist": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Geologica": {
+  "g": "g",
+  "alts": [
+   "ss01:g.ss01 (Cursive Shapes)"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Glory": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Golos-Text": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Gothic-A1": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Gruppo": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Hanken-Grotesk": {
+  "g": "g",
+  "alts": [
+   "ss01:g.ss01",
+   "ss02:g.ss02"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Host-Grotesk": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "HostGrotesk": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Hubot-Sans": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "IBM-Plex-Sans": {
+  "g": "g",
+  "alts": [
+   "salt:g.alt01",
+   "ss02:g.alt01 (simple lowercase g)"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Instrument-Sans": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Inter": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Italiana": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Josefin-Sans": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Josefin-Slab": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Jost": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Kanit": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Karla": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "KronaOne": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Kumbh-Sans": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "League-Spartan": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Lexend": {
+  "g": "g",
+  "alts": [
+   "ss01:g.ss01"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "LexendDeca": {
+  "g": "g",
+  "alts": [
+   "ss01:g.ss01"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "LexendExa": {
+  "g": "g",
+  "alts": [
+   "ss01:g.ss01"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "LexendGiga": {
+  "g": "g",
+  "alts": [
+   "ss01:g.ss01"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Libre-Franklin": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Limelight": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Manrope": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Marcellus": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Michroma": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Mona-Sans": {
+  "g": "g",
+  "alts": [
+   "ss06:g.ss06 (Double-storey g)"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Monda": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Montserrat-Alternates": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Nunito-Sans": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Onest": {
+  "g": "g",
+  "alts": [
+   "ss01:g_alt (ss01)"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Outfit": {
+  "g": "g",
+  "alts": [
+   "salt:g.ss01",
+   "ss01:g.ss01 (ss01)"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Overpass": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Parkinsans": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Pathway-Extreme": {
+  "g": "g",
+  "alts": [
+   "ss01:g.ss01 (simple storey a and g)"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "PlusJakartaSans": {
+  "g": "g",
+  "alts": [
+   "ss01:g.ss01 (Lancip Alternates)",
+   "ss03:g.ss03 (Lingkar Alternates)"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Poiret-One": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Public-Sans": {
+  "g": "g",
+  "alts": [
+   "salt:g.ss01",
+   "ss01:g.ss01"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "QuattrocentoSans": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Questrial": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Radio-Canada": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Raleway": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Readex-Pro": {
+  "g": "g",
+  "alts": [
+   "ss02:g.ss02 (g double-storey)"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Red-Hat-Display": {
+  "g": "g",
+  "alts": [
+   "ss02:g.ss02 (ss02)"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Red-Hat-Text": {
+  "g": "g",
+  "alts": [
+   "ss02:g.ss02 (ss02)"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Reddit-Sans": {
+  "g": "g",
+  "alts": [
+   "cv04:g.ss01",
+   "cv14:g.ss03",
+   "ss01:g.ss01 (Chocolate)",
+   "ss03:g.ss03 (Fudge)"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Rethink-Sans": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Righteous": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Rubik": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Schibsted-Grotesk": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Sintony": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "SometypeMono": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Sora": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Source-Sans-3": {
+  "g": "g",
+  "alts": [
+   "cv03:g.a",
+   "salt:g.a",
+   "ss02:g.a (Simple a g l)",
+   "ss04:g.a (Simple g)"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Space-Grotesk": {
+  "g": "g",
+  "alts": [
+   "ss02:g.ss02"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Spline-Sans": {
+  "g": "g",
+  "alts": [
+   "ss02:g.ss02"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Syne": {
+  "g": "g",
+  "alts": [
+   "ss04:g.ss04 (g double storey)"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Tenor-Sans": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Unbounded": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Urbanist": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Wix-Madefor-Display": {
+  "g": "g",
+  "alts": [],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "Work-Sans": {
+  "g": "g",
+  "alts": [
+   "salt:g.ss01",
+   "ss01:g.ss01"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ },
+ "YsabeauOffice": {
+  "g": "g",
+  "alts": [
+   "ss01:g.ss01 (Infant cut)"
+  ],
+  "license": "This Font Software is licensed under the SIL Open Font Licen"
+ }
+}

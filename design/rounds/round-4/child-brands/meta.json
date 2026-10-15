@@ -1,0 +1,166 @@
+{
+ "meta": {
+  "layout": {
+   "L1": {
+    "title": "Circle snap",
+    "why": "A circular layout: all three nodes sit on one orbit, drawn as a thin accent ring through their centres. The g is unchanged, only scaled to fit the ring."
+   },
+   "L2": {
+    "title": "Grid snap",
+    "why": "A grid layout: the g sits on a 3 x 3 dot grid, the guide points a grid layout snaps nodes to."
+   },
+   "L3": {
+    "title": "Spring",
+    "why": "A force-directed layout: the ear edge is a spring, pushed out to its rest length. The ear node moves out along its own direction; nothing else changes."
+   },
+   "L4": {
+    "title": "Settling",
+    "why": "A layout settling: the ear node has just slid into place, with two motion strokes trailing behind it. Risk: speed lines can read as a comet."
+   },
+   "L5": {
+    "title": "Radial rings",
+    "why": "A radial layout: the loop node is the root and the other nodes sit on rings around it, one ring per hop (bowl on the first, the ear on the second)."
+   },
+   "L6": {
+    "title": "Axes (round 3)",
+    "why": "Kept from round 3: the g on x/y axes, accent ticks on both axes marking the ear node's coordinates, a guide dropped to the x axis."
+   },
+   "L7": {
+    "title": "Transform handles",
+    "why": "Arranging, as in a drawing tool: the g inside a selection box with four accent corner handles, the frame you drag to move and resize a layout."
+   }
+  },
+  "algorithms": {
+   "A1": {
+    "title": "Shortest path traced",
+    "why": "The route an algorithm found is traced over the g like a route on a map: a thin accent line from the ear node through the centre of the bowl to the centre of the loop, with a stop at each node."
+   },
+   "A2": {
+    "title": "Ranking by weight",
+    "why": "An algorithm scores every node and the g draws each node by its score: the bowl heaviest, the loop lightest, the ear node larger. Same rings, same places; only weights change."
+   },
+   "A3": {
+    "title": "Centrality hub",
+    "why": "The most central node is marked: the bowl, which joins the other two, gets an accent halo, broken where its two edges leave. Everything else is the plain g."
+   },
+   "A4": {
+    "title": "Community split",
+    "why": "A community detection result: the top cluster (ear and bowl) in accent, the loop in its own color, and the edge between the two clusters cut. One color: the loop drops to a thin line."
+   },
+   "A5": {
+    "title": "Traversal order",
+    "why": "A breadth-first walk from the accent ear node: the bowl is visited 1st and the loop 2nd, the numbers written in the rings. Expected to fail at 16 px, where the digits close up."
+   },
+   "A6": {
+    "title": "Flow arrows",
+    "why": "A flow or a directed walk: both edges carry an accent arrowhead, ear to bowl to loop. The arrows sit on the edges, so the g does not move."
+   }
+  },
+  "samples": {
+   "S1": {
+    "title": "Offset deck",
+    "why": "Round 3's cards, heavier: the g on the front card, the top and right edges of two cards behind it, all at full weight."
+   },
+   "S2": {
+    "title": "Fanned hand",
+    "why": "A hand of cards fanned out: you pick one ready-made graph from many. The g is on the front card; two cards fan out behind it."
+   },
+   "S3": {
+    "title": "Deck, other graphs peek",
+    "why": "The offset deck, but each card behind shows the corner of its own graph, an accent node: every card is a different sample."
+   },
+   "S4": {
+    "title": "Playing card",
+    "why": "One playing card with the g as its face and accent nodes as the corner pips: a sample you deal out, ready to play with."
+   }
+  },
+  "cobrand": {
+   "C1": {
+    "title": "Logos, then the name",
+    "why": "As asked: the graphty g and the Cytoscape.js logo side by side at the same height, then 'graphty cytoscape-extensions' in the family's lockup style."
+   },
+   "C2": {
+    "title": "Logos with a rule",
+    "why": "The same, with a thin rule between the two logos so they read as two brands side by side rather than one shape."
+   }
+  }
+ },
+ "pick": {
+  "layout": "L7",
+  "algorithms": "A4",
+  "samples": "S1",
+  "cobrand": "C1"
+ },
+ "palettes": {
+  "p1": {
+   "name": "P1 ink + lime",
+   "ink": "#2a3045",
+   "accent": "#75a300",
+   "text": "#14161f",
+   "pkg": "#2a3045",
+   "knock": "#ffffff",
+   "tile": "#2a3045"
+  },
+  "p1-dark": {
+   "ink": "#9aa3b8",
+   "accent": "#c4f23a",
+   "text": "#f2f3f7",
+   "pkg": "#9aa3b8",
+   "knock": "#12131a",
+   "tile": "#3a4360"
+  },
+  "p2": {
+   "name": "P2 graphite + magenta",
+   "ink": "#2e323c",
+   "accent": "#e0306f",
+   "text": "#1c1d22",
+   "pkg": "#2e323c",
+   "knock": "#ffffff",
+   "tile": "#2e323c"
+  },
+  "p2-dark": {
+   "ink": "#d0d4dc",
+   "accent": "#ec3f7e",
+   "text": "#f2f2f4",
+   "pkg": "#d0d4dc",
+   "knock": "#12131a",
+   "tile": "#3a3f4b"
+  },
+  "p3": {
+   "name": "P3 indigo + amber",
+   "ink": "#4f46e5",
+   "accent": "#d48200",
+   "text": "#1b1b2b",
+   "pkg": "#4f46e5",
+   "knock": "#ffffff",
+   "tile": "#4f46e5"
+  },
+  "p3-dark": {
+   "ink": "#8b93fa",
+   "accent": "#ffb81f",
+   "text": "#f2f2f7",
+   "pkg": "#8b93fa",
+   "knock": "#12131a",
+   "tile": "#5b54ee"
+  },
+  "mono": {
+   "ink": "#14161f",
+   "accent": "#14161f",
+   "text": "#14161f",
+   "pkg": "#14161f",
+   "knock": "#ffffff",
+   "tile": "#14161f",
+   "mono": true
+  },
+  "mono-dark": {
+   "ink": "#f2f3f7",
+   "accent": "#f2f3f7",
+   "text": "#f2f3f7",
+   "pkg": "#f2f3f7",
+   "knock": "#12131a",
+   "tile": "#f2f3f7",
+   "mono": true,
+   "tileInk": "#12131a"
+  }
+ }
+}

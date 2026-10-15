@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 398 64" width="796" height="128">
+<style>@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&amp;display=block'); text{font-family:'Space Grotesk',sans-serif}</style>
+<rect x="0" y="0" width="64" height="64" rx="14" fill="#3355e0"/><circle cx="20" cy="44" r="11" fill="#fff"/><polyline points="20,44 48,16" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><polygon points="54,10 40,13 51,24" fill="#fff"/><polyline points="52,50 40,50" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><polygon points="34,50 42,44 42,56" fill="#fff"/>
+<text x="76" y="43" font-size="38" font-weight="600" letter-spacing="-1" fill="#1a1f36">graphty<tspan dx="12" font-weight="400" fill="#3355e0">graph-io</tspan></text>
+</svg>

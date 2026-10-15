@@ -1,0 +1,7 @@
+t | git branch / graph nodes | male symbol | none
+m | connected nodes / molecule | git graph | none
+q | network hub / molecule | share icon | none
+w | linked nodes / git branch | male symbol | none
+z | triangle graph / network | share icon | A (faint)
+k | key / linked nodes | git branch | none
+h | triangle graph / network | share icon | A (faint)

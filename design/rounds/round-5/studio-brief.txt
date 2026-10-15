@@ -1,0 +1,24 @@
+Graphty logo, round 5: a quick iteration toward closing. Earlier rounds are under $REPO_ROOT/tmp/logo/round-1 to round-4. Round 4's page is round-4/index.html; the winner's files are in round-4/director/winner/ and director/family-R1/, with build tools beside them. Work only under tmp/logo/round-5/. Write ASCII in files, use hand-built SVG only (no generated images needed this round), render PNGs at 16, 32, 64, 128 and 512 with Playwright (node_modules/.pnpm/playwright@1.57.0/node_modules/playwright, FC_FONTATIONS=1), and look at the small sizes yourself. Never publish through claude.ai.
+
+THE OWNER'S PICKS AND QUESTIONS (verbatim):
+"- winner is the graphty 'g' logo R1
+    - I do have a question about coloring -- can I see three different versions, each with one of the three circles colored. I'm curious if coloring the middle or the bottom circle makes it look more like a graph while also keeping the 'g' association
+- wordmark is the third word on the right under "### Wordmark: Outfit 500 (SIL OFL 1.1)" -- I think it's Outfit + ss01?
+- layout is L7
+- algorithms is A1 or A3 or a combination of the two, let me see the options
+- graph samples I decided on the last round was the stack of cards. probably S3 minus the dot on the cards in the back in the upper right corner
+- cytoscape is either: (graphty logo)(plus sign)(cytoscape logo); or (graphty logo)(heart icon)(cytoscape logo). let me see both
+- E1-E5 are not keepers, keep the logo as it is
+- colors I'm still not decided on, show me the full set of word marks and child logos in all three colors. let me know if the team sees pros or cons to the different color combinations. also, the three pink accent colors are essentially the same to my eye. and do we need three accents? should we just have one? you tell me what best practices are."
+
+DO:
+1. Confirm exactly which wordmark the owner means: the third one under "Wordmark: Outfit 500" on round 4's page. Check whether it's Outfit with ss01 (the looping g), and state it plainly. Use it everywhere.
+2. Color-the-circle study: R1 with only the top-right (ear) node in the accent (today's), only the middle ring, only the bottom ring. Show each in all three palettes (graphite + magenta, ink + lime, indigo + amber), at 512, 64 and 16 px, light and dark. Say which reads more like a graph while keeping the g, and why.
+3. Algorithms: A1, A3 and 2-3 combinations of the two, drawn on R1, labeled A1, A3, A1+3a, and so on.
+4. Graph samples: S3 without the dot on the back cards' upper-right corner.
+5. Cytoscape co-brand: both versions, graphty mark + plus sign + Cytoscape.js logo, and graphty mark + heart + Cytoscape.js logo, each followed by "graphty cytoscape-extensions" if that fits the earlier instruction, with spacing and optical sizing done properly. Note that the Cytoscape.js logo needs its maintainers' permission; the owner's rule is that we never post on Cytoscape repositories.
+6. The full kit (the parent mark, the wordmark lockup, and every child: element, layout L7, algorithms options, graph-io, graph-format, graph-samples, webgpu, the cytoscape co-brands) in each of the three palettes, as one sheet per palette, on light and dark.
+7. Accent colors: the owner sees the three magenta variants (base, text-safe, dark-mode) as the same. Research and state current best practice (brand systems usually define one accent hue, with tonal steps only where accessibility requires them, e.g. a darker step for text on white and a lighter step on dark). Recommend whether graphty needs one accent or a scale, and say exactly which hex values to keep per palette, checked for contrast (graphics 3:1, text 4.5:1 on white and on #111). If one value can serve on both light and dark, prefer that.
+8. Give pros and cons for each palette, for graphty's users and against the field (Cytoscape orange, Neo4j, Graphistry teal, D3 orange).
+
+Build tmp/logo/round-5/index.html (plain HTML/CSS, light and dark), in sections matching the numbered items above, with labels so the owner can reply with picks. Serve it via the servherd MCP: name logo-concepts-r5, cwd that folder, command "python3 -m http.server {{port}} --bind 0.0.0.0". Check every image loads in a browser. Return the URL, the wordmark confirmation, the team's recommendations for the circle coloring, the accent strategy and the palette, and anything the owner still needs to decide.

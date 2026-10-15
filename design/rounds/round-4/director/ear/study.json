@@ -1,0 +1,28 @@
+{
+ "E1": {
+  "ear_dy": 0,
+  "node_x": 53,
+  "note": "horizontal from the bowl's middle"
+ },
+ "E2": {
+  "ear_dy": -4.5,
+  "node_x": 53.5,
+  "note": "horizontal, a little above the middle"
+ },
+ "E3": {
+  "ear_dy": -7,
+  "node_x": 54,
+  "note": "horizontal, near the top: a type-style flag ear"
+ },
+ "E4": {
+  "ear_dy": -8.5,
+  "node_x": 54,
+  "note": "horizontal, almost tangent to the top"
+ },
+ "E5": {
+  "ear_dy": -6,
+  "node_x": 53.5,
+  "ear_dy_end": -9,
+  "note": "flag rising 7 degrees"
+ }
+}

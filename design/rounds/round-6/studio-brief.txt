@@ -1,0 +1,7 @@
+The owner's picks from round 5, hopefully the last pass. Build them under tmp/logo/round-6/ (reuse your tools), then serve the page via the servherd MCP: name logo-concepts-r6, cwd that folder, command "python3 -m http.server {{port}} --bind 0.0.0.0". Check every image loads.
+- Wordmark: V12 (Outfit + ss01 on "graphty").
+- Algorithms: A1+3a. Samples: S3a. Cytoscape co-brand: K2 (the heart).
+- "Which circle carries the color": show N1, N2 and N3 each with the wordmark (lockup) and each by itself, in all three palettes, at 512, 64 and 16 px, on light and dark.
+- Child-brand color rule: the package name ("layout", "graph-io" and so on) is set in the palette's ACCENT color, and "graphty" always stays in the dark (ink) color. On dark backgrounds, "graphty" uses the light ink and the package name keeps the accent. Check the package name's contrast on white and on dark for each palette, and where an accent is too faint for text (lime, amber on white), show the text-safe step and say so.
+- Regenerate "The full kit, one sheet per palette" with that coloring: the parent mark, the lockup, and every child (element, layout L7, algorithms A1+3a, graph-io, graph-format, graph-samples S3a, webgpu, cytoscape K2), each on light and dark.
+Keep labels so the owner can make the final picks: the circle (N1, N2 or N3) and the palette. Return the URL and a short summary.

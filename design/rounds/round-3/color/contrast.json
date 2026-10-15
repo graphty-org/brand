@@ -1,0 +1,488 @@
+[
+  {
+    "id": "1-graphite-magenta",
+    "name": "Graphite + magenta",
+    "light": {
+      "ink": "#1c1d22",
+      "primary": "#2e323c",
+      "accent": "#e0306f",
+      "accentMark": "#e0306f"
+    },
+    "dark": {
+      "ink": "#f2f2f4",
+      "primary": "#d0d4dc",
+      "accent": "#ec3f7e",
+      "accentMark": "#ec3f7e"
+    },
+    "textAccent": {
+      "onWhite": "#dd2c6d",
+      "onDark": "#ec3f7e"
+    },
+    "contrast": {
+      "primaryOnWhite": 12.82,
+      "primaryOnDark": 12.71,
+      "accentOnWhite": 4.36,
+      "accentMarkOnWhite": 4.36,
+      "accentOnDark": 5.02,
+      "textAccentOnWhite": 4.51,
+      "textAccentOnDark": 5.02,
+      "inkOnWhite": 16.82,
+      "inkOnDark": 16.89
+    },
+    "cvd": {
+      "light": {
+        "normal": {
+          "ratio": 2.94,
+          "dE": 0.36
+        },
+        "deuteranopia": {
+          "accent": "#8c856b",
+          "primary": "#2e313c",
+          "ratio": 3.51,
+          "dE": 0.31
+        },
+        "protanopia": {
+          "accent": "#5e6370",
+          "primary": "#2f333c",
+          "ratio": 2.11,
+          "dE": 0.18
+        },
+        "tritanopia": {
+          "accent": "#f4004c",
+          "primary": "#2b3435",
+          "ratio": 3.01,
+          "dE": 0.39
+        }
+      },
+      "dark": {
+        "normal": {
+          "ratio": 2.53,
+          "dE": 0.31
+        },
+        "deuteranopia": {
+          "accent": "#96907a",
+          "primary": "#d1d3dc",
+          "ratio": 2.14,
+          "dE": 0.22
+        },
+        "protanopia": {
+          "accent": "#686e7f",
+          "primary": "#d2d4dc",
+          "ratio": 3.44,
+          "dE": 0.33
+        },
+        "tritanopia": {
+          "accent": "#ff1c5a",
+          "primary": "#cdd6d6",
+          "ratio": 2.55,
+          "dE": 0.34
+        }
+      }
+    }
+  },
+  {
+    "id": "2-ink-lime",
+    "name": "Ink + lime",
+    "light": {
+      "ink": "#14161f",
+      "primary": "#2a3045",
+      "accent": "#8fbf00",
+      "accentMark": "#75a300"
+    },
+    "dark": {
+      "ink": "#f2f3f7",
+      "primary": "#9aa3b8",
+      "accent": "#c4f23a",
+      "accentMark": "#c4f23a"
+    },
+    "textAccent": {
+      "onWhite": "#588300",
+      "onDark": "#c4f23a"
+    },
+    "contrast": {
+      "primaryOnWhite": 13.07,
+      "primaryOnDark": 7.47,
+      "accentOnWhite": 2.18,
+      "accentMarkOnWhite": 3,
+      "accentOnDark": 14.49,
+      "textAccentOnWhite": 4.51,
+      "textAccentOnDark": 14.49,
+      "inkOnWhite": 18.04,
+      "inkOnDark": 17.03
+    },
+    "cvd": {
+      "light": {
+        "normal": {
+          "ratio": 4.35,
+          "dE": 0.4
+        },
+        "deuteranopia": {
+          "accent": "#a6941f",
+          "primary": "#273045",
+          "ratio": 4.31,
+          "dE": 0.39
+        },
+        "protanopia": {
+          "accent": "#ac9700",
+          "primary": "#293246",
+          "ratio": 4.38,
+          "dE": 0.4
+        },
+        "tritanopia": {
+          "accent": "#7a9b8a",
+          "primary": "#223437",
+          "ratio": 4.26,
+          "dE": 0.35
+        }
+      },
+      "dark": {
+        "normal": {
+          "ratio": 1.94,
+          "dE": 0.29
+        },
+        "deuteranopia": {
+          "accent": "#fae14c",
+          "primary": "#9aa2b7",
+          "ratio": 1.94,
+          "dE": 0.27
+        },
+        "protanopia": {
+          "accent": "#ffe300",
+          "primary": "#9da4b9",
+          "ratio": 1.92,
+          "dE": 0.29
+        },
+        "tritanopia": {
+          "accent": "#cee6d0",
+          "primary": "#93a7aa",
+          "ratio": 1.9,
+          "dE": 0.19
+        }
+      }
+    }
+  },
+  {
+    "id": "3-indigo-amber",
+    "name": "Indigo + amber",
+    "light": {
+      "ink": "#1b1b2b",
+      "primary": "#4f46e5",
+      "accent": "#f5a000",
+      "accentMark": "#d48200"
+    },
+    "dark": {
+      "ink": "#f2f2f7",
+      "primary": "#8b93fa",
+      "accent": "#ffb81f",
+      "accentMark": "#ffb81f"
+    },
+    "textAccent": {
+      "onWhite": "#b36200",
+      "onDark": "#ffb81f"
+    },
+    "contrast": {
+      "primaryOnWhite": 6.29,
+      "primaryOnDark": 6.88,
+      "accentOnWhite": 2.12,
+      "accentMarkOnWhite": 3,
+      "accentOnDark": 10.91,
+      "textAccentOnWhite": 4.5,
+      "textAccentOnDark": 10.91,
+      "inkOnWhite": 16.96,
+      "inkOnDark": 16.92
+    },
+    "cvd": {
+      "light": {
+        "normal": {
+          "ratio": 2.09,
+          "dE": 0.4
+        },
+        "deuteranopia": {
+          "accent": "#b09c06",
+          "primary": "#0059e2",
+          "ratio": 2.16,
+          "dE": 0.4
+        },
+        "protanopia": {
+          "accent": "#9d8900",
+          "primary": "#0067ea",
+          "ratio": 1.46,
+          "dE": 0.35
+        },
+        "tritanopia": {
+          "accent": "#e86e6f",
+          "primary": "#007190",
+          "ratio": 1.83,
+          "dE": 0.3
+        }
+      },
+      "dark": {
+        "normal": {
+          "ratio": 1.59,
+          "dE": 0.34
+        },
+        "deuteranopia": {
+          "accent": "#e4cc29",
+          "primary": "#6498f8",
+          "ratio": 1.76,
+          "dE": 0.35
+        },
+        "protanopia": {
+          "accent": "#d3ba00",
+          "primary": "#6ca0fe",
+          "ratio": 1.33,
+          "dE": 0.32
+        },
+        "tritanopia": {
+          "accent": "#ffa49e",
+          "primary": "#65a8ba",
+          "ratio": 1.41,
+          "dE": 0.21
+        }
+      }
+    }
+  },
+  {
+    "id": "4-cobalt-lime",
+    "name": "Cobalt + lime",
+    "light": {
+      "ink": "#111a33",
+      "primary": "#1f45c8",
+      "accent": "#9ad300",
+      "accentMark": "#6fa400"
+    },
+    "dark": {
+      "ink": "#eef2ff",
+      "primary": "#7d95f0",
+      "accent": "#c6f432",
+      "accentMark": "#c6f432"
+    },
+    "textAccent": {
+      "onWhite": "#528400",
+      "onDark": "#c6f432"
+    },
+    "contrast": {
+      "primaryOnWhite": 7.65,
+      "primaryOnDark": 6.68,
+      "accentOnWhite": 1.8,
+      "accentMarkOnWhite": 3.01,
+      "accentOnDark": 14.74,
+      "textAccentOnWhite": 4.51,
+      "textAccentOnDark": 14.74,
+      "inkOnWhite": 17.22,
+      "inkOnDark": 16.89
+    },
+    "cvd": {
+      "light": {
+        "normal": {
+          "ratio": 2.55,
+          "dE": 0.41
+        },
+        "deuteranopia": {
+          "accent": "#a5941f",
+          "primary": "#004bc6",
+          "ratio": 2.43,
+          "dE": 0.38
+        },
+        "protanopia": {
+          "accent": "#ac9700",
+          "primary": "#005bcc",
+          "ratio": 2.13,
+          "dE": 0.37
+        },
+        "tritanopia": {
+          "accent": "#739c8b",
+          "primary": "#006880",
+          "ratio": 2.08,
+          "dE": 0.19
+        }
+      },
+      "dark": {
+        "normal": {
+          "ratio": 2.21,
+          "dE": 0.39
+        },
+        "deuteranopia": {
+          "accent": "#fde347",
+          "primary": "#6795ee",
+          "ratio": 2.29,
+          "dE": 0.39
+        },
+        "protanopia": {
+          "accent": "#ffe400",
+          "primary": "#729ff4",
+          "ratio": 2.05,
+          "dE": 0.38
+        },
+        "tritanopia": {
+          "accent": "#d0e7d1",
+          "primary": "#4fa8b7",
+          "ratio": 2.1,
+          "dE": 0.24
+        }
+      }
+    }
+  },
+  {
+    "id": "5-spruce-sun",
+    "name": "Spruce + sun",
+    "light": {
+      "ink": "#0d1f1c",
+      "primary": "#0e5146",
+      "accent": "#ffbf00",
+      "accentMark": "#c68900"
+    },
+    "dark": {
+      "ink": "#eef6f4",
+      "primary": "#4fa894",
+      "accent": "#ffd23f",
+      "accentMark": "#ffd23f"
+    },
+    "textAccent": {
+      "onWhite": "#a56900",
+      "onDark": "#ffd23f"
+    },
+    "contrast": {
+      "primaryOnWhite": 9.19,
+      "primaryOnDark": 6.62,
+      "accentOnWhite": 1.65,
+      "accentMarkOnWhite": 3.01,
+      "accentOnDark": 13.08,
+      "textAccentOnWhite": 4.54,
+      "textAccentOnDark": 13.08,
+      "inkOnWhite": 17.07,
+      "inkOnDark": 17.2
+    },
+    "cvd": {
+      "light": {
+        "normal": {
+          "ratio": 3.06,
+          "dE": 0.33
+        },
+        "deuteranopia": {
+          "accent": "#ae9b0d",
+          "primary": "#444547",
+          "ratio": 3.43,
+          "dE": 0.33
+        },
+        "protanopia": {
+          "accent": "#a08c00",
+          "primary": "#4d4b46",
+          "ratio": 2.59,
+          "dE": 0.26
+        },
+        "tritanopia": {
+          "accent": "#d87874",
+          "primary": "#00524e",
+          "ratio": 2.96,
+          "dE": 0.34
+        }
+      },
+      "dark": {
+        "normal": {
+          "ratio": 1.98,
+          "dE": 0.27
+        },
+        "deuteranopia": {
+          "accent": "#f5dc48",
+          "primary": "#949596",
+          "ratio": 2.17,
+          "dE": 0.27
+        },
+        "protanopia": {
+          "accent": "#eacf24",
+          "primary": "#a29f93",
+          "ratio": 1.7,
+          "dE": 0.21
+        },
+        "tritanopia": {
+          "accent": "#ffc0b6",
+          "primary": "#21aaa2",
+          "ratio": 1.84,
+          "dE": 0.27
+        }
+      }
+    }
+  },
+  {
+    "id": "6-aubergine-mint",
+    "name": "Aubergine + mint",
+    "light": {
+      "ink": "#1d1424",
+      "primary": "#4a1f5c",
+      "accent": "#14c08e",
+      "accentMark": "#00a978"
+    },
+    "dark": {
+      "ink": "#f5f0f8",
+      "primary": "#a888c4",
+      "accent": "#4be3b5",
+      "accentMark": "#4be3b5"
+    },
+    "textAccent": {
+      "onWhite": "#008759",
+      "onDark": "#4be3b5"
+    },
+    "contrast": {
+      "primaryOnWhite": 12.79,
+      "primaryOnDark": 6.28,
+      "accentOnWhite": 2.34,
+      "accentMarkOnWhite": 3.02,
+      "accentOnDark": 11.65,
+      "textAccentOnWhite": 4.56,
+      "textAccentOnDark": 11.65,
+      "inkOnWhite": 17.83,
+      "inkOnDark": 16.82
+    },
+    "cvd": {
+      "light": {
+        "normal": {
+          "ratio": 4.23,
+          "dE": 0.4
+        },
+        "deuteranopia": {
+          "accent": "#958f7b",
+          "primary": "#1d335b",
+          "ratio": 3.87,
+          "dE": 0.34
+        },
+        "protanopia": {
+          "accent": "#a69c75",
+          "primary": "#0a305e",
+          "ratio": 4.78,
+          "dE": 0.41
+        },
+        "tritanopia": {
+          "accent": "#00a99c",
+          "primary": "#492a3a",
+          "ratio": 4.27,
+          "dE": 0.37
+        }
+      },
+      "dark": {
+        "normal": {
+          "ratio": 1.85,
+          "dE": 0.27
+        },
+        "deuteranopia": {
+          "accent": "#c9c5b8",
+          "primary": "#8495c2",
+          "ratio": 1.72,
+          "dE": 0.17
+        },
+        "protanopia": {
+          "accent": "#ddd4b3",
+          "primary": "#7d93c6",
+          "ratio": 2.06,
+          "dE": 0.24
+        },
+        "tritanopia": {
+          "accent": "#00e4d6",
+          "primary": "#a5909e",
+          "ratio": 1.85,
+          "dE": 0.23
+        }
+      }
+    }
+  }
+]

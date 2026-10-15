@@ -1,0 +1,11 @@
+// The eight shortlisted wordmark fonts: [id, font file in full/, label, OpenType features, variation settings, weight, g style, license, why].
+export const top8 = [
+  ["outfit-ss01", "Outfit", "Outfit + ss01", "'ss01' 1", "", 500, "double-story (ss01): round bowl, diagonal ear, diagonal neck, round loop", "SIL OFL 1.1", "The owner's font with a stylistic set that swaps its single-story g for a looped one; the rest stays geometric and plain. The closest echo of the 3B mark: the ear and the neck are diagonals, like the mark's two edges, and both rings are near-circles."],
+  ["dm-sans", "DM-Sans", "DM Sans (opsz 40)", "normal", "'opsz' 40", 500, "double-story by default: diagonal neck, flat ear, wide oval loop", "SIL OFL 1.1", "Named by the owner; the default g already loops. Its diagonal neck echoes the mark's zigzag; the flat ear and flatter loop echo it less than Outfit does."],
+  ["lexend-ss01", "Lexend", "Lexend + ss01", "'ss01' 1", "", 450, "double-story (ss01), open round loop", "SIL OFL 1.1", "Geometric, generous spacing, very legible small; the ss01 g loops like the mark."],
+  ["lexend-exa-ss01", "LexendExa", "Lexend Exa + ss01", "'ss01' 1", "", 400, "double-story (ss01)", "SIL OFL 1.1", "The retro / deco leaning option: Lexend drawn wide with wide spacing, which reads like 1930s signage without any decorative letters."],
+  ["syne-ss04", "Syne", "Syne + ss04", "'ss04' 1", "", 500, "double-story (ss04 'g double storey'), oval rings", "SIL OFL 1.1", "Second deco-leaning option: an art-gallery display face with a wide, slightly eccentric a and t; more character, a bit more costume risk."],
+  ["geologica", "Geologica", "Geologica", "normal", "", 450, "double-story by default, round loop", "SIL OFL 1.1", "Clean geometric grotesk; the g loops by default, the rest is neutral."],
+  ["source-sans-3", "Source-Sans-3", "Source Sans 3", "normal", "", 500, "double-story by default, oval loop, humanist", "SIL OFL 1.1", "Named by the owner. Humanist (calligraphic) rather than geometric, so the g is tilted and narrower than the mark's rings."],
+  ["hanken-grotesk", "Hanken-Grotesk", "Hanken Grotesk", "normal", "", 500, "double-story by default: diagonal ear, oval loop", "SIL OFL 1.1", "Neutral grotesk; diagonal ear like the mark, but a narrow, upright g that sits closer to a newspaper face than to the mark's circles."],
+];

@@ -1,0 +1,31 @@
+graphty: The parent mark, unchanged from round 2.
+app: The app is the thing you open, so it alone gets the launcher tile.
+graphty-element: Kept: a web component is an HTML tag, so the g sits between angle brackets.
+layout: A layout gives every node an x and a y, so the g sits on a pair of axes and amber ticks on both axes mark the focus node's coordinates, with a guide dropped to the x axis.
+algorithms: From 2D and 2E, redrawn for the g: the route an algorithm found lights up from the amber focus node, along the ear edge and around the bowl, and stops there. The neck and loop are off the route, so they stay indigo (one color: off-route parts drop to a thin line).
+webgpu-graph-algorithms: Kept: the algorithms child mounted on a chip: the same computation, run on the GPU.
+graph-io: Kept: the g sits on a page, its ear edge crossing out through the page's edge: a graph moving into and out of a file.
+graph-format: Kept from round 2 (no note on it): the g inside an array's square brackets, [g].
+graph-samples: From 2C's idea: the generators are seeded, so the amber focus node becomes a die: the same seed rolls the same graph every time.
+cytoscape-extensions: A co-brand, not a child: the graphty g and Cytoscape.js's own logo side by side, both unaltered. At 16 px use the graphty g alone.
+
+Layout vs algorithms: layout changes WHERE the g sits (axes, ticks, a guide; colors untouched), algorithms changes WHAT the g carries (the found route lit amber; geometry untouched). Space versus color, so neither reads as the other, and webgpu reuses algorithms on a chip.
+Cytoscape.js logo: its maintainers allow use 'in reference to the Cytoscape software' (cytoscape-helpdesk, Alex Pico); used unaltered in color, the one-color version swaps its fills and should be checked with them. Source: ref/cytoscape-js-logo.svg from the cytoscape.js repo.
+
+Candidates:
+layout-1-floor: From 2D's layout child: a floor line under the g and a plumb line from the focus node down to its spot on the floor. The g is being placed in space.
+layout-2-reticle: From 2C's idea: the amber focus node becomes a positioning reticle, the mark you drag to set where a node goes.
+layout-3-axes (PICKED): A layout gives every node an x and a y, so the g sits on a pair of axes and amber ticks on both axes mark the focus node's coordinates, with a guide dropped to the x axis.
+algorithms-1-route: From 2D and 2E: the route an algorithm found lights up in amber, from the focus node to the far node, and the far node turns amber as the answer.
+algorithms-2-scores: Like 2E's coloring: an algorithm writes a value into every node (a score, a rank), so each node fills with amber by its score: the bowl full, the loop half, the ear as before.
+algorithms-3-ranked: From 2C's idea: the amber focus node becomes a small ranked bar chart, the answer an algorithm returns about the graph.
+algorithms-4-lit-route (PICKED): From 2D and 2E, redrawn for the g: the route an algorithm found lights up from the amber focus node, along the ear edge and around the bowl, and stops there. The neck and loop are off the route, so they stay indigo (one color: off-route parts drop to a thin line).
+algorithms-5-lit-route-long: The same lit route carried one step further, through the neck to the loop's edge: amber shows the whole path and only the destination ring stays indigo.
+samples-1-cards: graph-samples hands you ready-made graphs: the g is on the front card of a small deck, two card edges behind it, all solid lines.
+samples-2-die (PICKED): From 2C's idea: the generators are seeded, so the amber focus node becomes a die: the same seed rolls the same graph every time.
+samples-3-box: graph-samples is a box of ready-made graphs: the g lifts out of an open box.
+
+Cytoscape.js co-brands:
+cobrand-1-plus: graphty + Cytoscape.js: both marks and both names at the same size, joined by a plus, the way two partner brands lock up. The package name goes underneath or beside it in running text.
+cobrand-2-heart (PICKED): graphty, an amber heart, Cytoscape.js: the two marks with the heart between, then the package name. Friendly, and it says 'made for Cytoscape', not 'made by'.
+cobrand-3-for: graphty leads and Cytoscape.js is named as the platform, with its logo at text size: 'graphty extensions for Cytoscape.js'. Reads as a graphty package, credits Cytoscape plainly.

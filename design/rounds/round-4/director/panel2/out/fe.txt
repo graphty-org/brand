@@ -1,0 +1,7 @@
+h | network graph triangle | share icon | A
+m | molecule / connected nodes | git branch icon | o, maybe 8
+q | hub with three spokes (network node) | molecule / biohazard-ish | O
+w | connected nodes / git branch | male symbol or key | o, 8, maybe g
+z | network graph triangle | share icon | A, o
+k | connected nodes / git branch | bicycle chain link or key | o, 8, maybe P
+t | connected nodes / git branch | male symbol or flag on a pole | o, 8, maybe g or F

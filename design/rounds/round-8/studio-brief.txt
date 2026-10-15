@@ -1,0 +1,15 @@
+Build graphty logo round 8 in $REPO_ROOT/tmp/logo/round-8, reusing the tools, SVG sources and conventions of tmp/logo/round-7 (and round-6 for the circle treatments N1, N2, N3 and the full kit). Read round-7/index.html and manifest.json, round-6, and their tools first. Plain ASCII in all files. Serve the page through the servherd MCP (name "logo-round-8", cwd that directory, a static server with PORT {{port}}) and confirm it answers 200. Keep it quick: the owner wants fast iterations.
+
+Owner decisions (2026-10-15):
+- Brand color: lime + ink (the lime scale #c4f23a / #75a300 / #588300 / #f1fbd3 with ink #2a3045). Pink is out.
+- Green on white: G-W4 (#8fbf00, no outline) for now -- but the owner may go BRIGHTER on white.
+- The heart in the "graphty <heart> cytoscape" co-brand (K2) must be a pink or red heart (not lime/ink). Offer two or three reds/pinks that sit well beside lime and ink.
+- The circles are still undecided: N1, N2, N3.
+
+Make one page with:
+1. **Brighter greens study.** A row of 5-7 greens stepping from #8fbf00 up to the on-black lime #c4f23a (e.g. ~#97c800, #a2d400, #aedf10, #b8e826, #c4f23a), plus "the same green as on black" (#c4f23a on white, no outline). Show the g mark and the mark+wordmark for each: on white, on black/ink, and as a small favicon at 16 and 32 px. Label each with its hex and its contrast ratio against white and against black (compute it). One line per option on legibility on white (lime is light, so say honestly where it washes out).
+2. **In-app.** Show each green as the accent in the real graphty app: use the brand-accent preview worktree $REPO_ROOT/.worktrees/exp-brand-accent-preview (graphty/src/theme.ts holds an uncommitted accent switch read from ?accent=; served at https://localhost:9414/?next&accent=...). Add accent keys for the new greens (light theme uses the chosen green, dark theme #c4f23a) and capture light- and dark-theme screenshots of the app for each into the page (one headless browser at a time; close it after). Do not commit in that worktree.
+3. **Three circle groups.** For each of N1, N2, N3, a group showing the whole kit in lime + ink with G-W4 on white: the mark alone (large and favicon sizes), the mark with the wordmark (light and dark), and the child brands (algorithms, layout, graph-io, the other package names the kit uses, samples S3a, and the cytoscape co-brand K2 with the red/pink heart). Same layout per group so they compare side by side.
+4. A short "What is left for you" section: pick the on-white green, the heart color, and N1/N2/N3.
+
+No internal ids beyond the option labels the owner already uses (N1-N3, G-W4, K2, S3a) and new ones you define on the page. Return the URL and a few plain sentences per section.

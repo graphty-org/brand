@@ -1,0 +1,210 @@
+{
+ "base": "R1",
+ "variants": [
+  {
+   "id": "V1",
+   "palette": "Ink + lime",
+   "pid": "ink-lime",
+   "font": "Figtree 600",
+   "fid": "figtree",
+   "license": "SIL OFL 1.1",
+   "why": "owner pick"
+  },
+  {
+   "id": "V2",
+   "palette": "Ink + lime",
+   "pid": "ink-lime",
+   "font": "Onest 600",
+   "fid": "onest",
+   "license": "SIL OFL 1.1",
+   "why": "owner pick"
+  },
+  {
+   "id": "V3",
+   "palette": "Ink + lime",
+   "pid": "ink-lime",
+   "font": "Outfit 500",
+   "fid": "outfit",
+   "license": "SIL OFL 1.1",
+   "why": "owner pick"
+  },
+  {
+   "id": "V4",
+   "palette": "Ink + lime",
+   "pid": "ink-lime",
+   "font": "Source Sans 3 600",
+   "fid": "sourcesans3",
+   "license": "SIL OFL 1.1",
+   "why": "looping g"
+  },
+  {
+   "id": "V5",
+   "palette": "Ink + lime",
+   "pid": "ink-lime",
+   "font": "DM Sans 600",
+   "fid": "dmsans",
+   "license": "SIL OFL 1.1",
+   "why": "looping g"
+  },
+  {
+   "id": "V6",
+   "palette": "Ink + lime",
+   "pid": "ink-lime",
+   "font": "Outfit 500, ss01 g",
+   "fid": "outfit-ss01",
+   "license": "SIL OFL 1.1",
+   "why": "owner pick with its own looping g (stylistic set 1)"
+  },
+  {
+   "id": "V7",
+   "palette": "Graphite + magenta",
+   "pid": "graphite-magenta",
+   "font": "Figtree 600",
+   "fid": "figtree",
+   "license": "SIL OFL 1.1",
+   "why": "owner pick"
+  },
+  {
+   "id": "V8",
+   "palette": "Graphite + magenta",
+   "pid": "graphite-magenta",
+   "font": "Onest 600",
+   "fid": "onest",
+   "license": "SIL OFL 1.1",
+   "why": "owner pick"
+  },
+  {
+   "id": "V9",
+   "palette": "Graphite + magenta",
+   "pid": "graphite-magenta",
+   "font": "Outfit 500",
+   "fid": "outfit",
+   "license": "SIL OFL 1.1",
+   "why": "owner pick"
+  },
+  {
+   "id": "V10",
+   "palette": "Graphite + magenta",
+   "pid": "graphite-magenta",
+   "font": "Source Sans 3 600",
+   "fid": "sourcesans3",
+   "license": "SIL OFL 1.1",
+   "why": "looping g"
+  },
+  {
+   "id": "V11",
+   "palette": "Graphite + magenta",
+   "pid": "graphite-magenta",
+   "font": "DM Sans 600",
+   "fid": "dmsans",
+   "license": "SIL OFL 1.1",
+   "why": "looping g"
+  },
+  {
+   "id": "V12",
+   "palette": "Graphite + magenta",
+   "pid": "graphite-magenta",
+   "font": "Outfit 500, ss01 g",
+   "fid": "outfit-ss01",
+   "license": "SIL OFL 1.1",
+   "why": "owner pick with its own looping g (stylistic set 1)"
+  },
+  {
+   "id": "V13",
+   "palette": "Indigo + amber",
+   "pid": "indigo-amber",
+   "font": "Figtree 600",
+   "fid": "figtree",
+   "license": "SIL OFL 1.1",
+   "why": "owner pick"
+  },
+  {
+   "id": "V14",
+   "palette": "Indigo + amber",
+   "pid": "indigo-amber",
+   "font": "Onest 600",
+   "fid": "onest",
+   "license": "SIL OFL 1.1",
+   "why": "owner pick"
+  },
+  {
+   "id": "V15",
+   "palette": "Indigo + amber",
+   "pid": "indigo-amber",
+   "font": "Outfit 500",
+   "fid": "outfit",
+   "license": "SIL OFL 1.1",
+   "why": "owner pick"
+  },
+  {
+   "id": "V16",
+   "palette": "Indigo + amber",
+   "pid": "indigo-amber",
+   "font": "Source Sans 3 600",
+   "fid": "sourcesans3",
+   "license": "SIL OFL 1.1",
+   "why": "looping g"
+  },
+  {
+   "id": "V17",
+   "palette": "Indigo + amber",
+   "pid": "indigo-amber",
+   "font": "DM Sans 600",
+   "fid": "dmsans",
+   "license": "SIL OFL 1.1",
+   "why": "looping g"
+  },
+  {
+   "id": "V18",
+   "palette": "Indigo + amber",
+   "pid": "indigo-amber",
+   "font": "Outfit 500, ss01 g",
+   "fid": "outfit-ss01",
+   "license": "SIL OFL 1.1",
+   "why": "owner pick with its own looping g (stylistic set 1)"
+  }
+ ],
+ "ring_gap_units": {
+  "3B": 1.73,
+  "R1": 5.96,
+  "R2": 4.85
+ },
+ "fonts": [
+  [
+   "figtree",
+   "Figtree 600",
+   "Figtree[wght].ttf",
+   "SIL OFL 1.1"
+  ],
+  [
+   "onest",
+   "Onest 600",
+   "Onest[wght].ttf",
+   "SIL OFL 1.1"
+  ],
+  [
+   "outfit",
+   "Outfit 500",
+   "Outfit[wght].ttf",
+   "SIL OFL 1.1"
+  ],
+  [
+   "sourcesans3",
+   "Source Sans 3 600",
+   "SourceSans3[wght].ttf",
+   "SIL OFL 1.1"
+  ],
+  [
+   "dmsans",
+   "DM Sans 600",
+   "DMSans[opsz,wght].ttf",
+   "SIL OFL 1.1"
+  ],
+  [
+   "outfit-ss01",
+   "Outfit 500, ss01 g",
+   "Outfit[wght].ttf",
+   "SIL OFL 1.1"
+  ]
+ ]
+}

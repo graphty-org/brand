@@ -1,0 +1,7 @@
+k | graph nodes connected by an edge | molecule / share icon | none (maybe a "b" or "d" shape)
+m | connected graph nodes | molecule / branch path | none (faint "b" shape)
+q | network hub with three nodes | molecule / atom | none (faint "Y")
+w | connected graph nodes | male symbol / key | none (slight "b" or "8" look)
+z | triangle network graph | share icon | A (faintly)
+h | triangle graph of three nodes | share icon | A (faintly)
+t | connected graph nodes | male symbol / music note | none (slight "b" or "g" look)

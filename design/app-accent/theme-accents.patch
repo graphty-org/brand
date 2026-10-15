@@ -1,0 +1,82 @@
+diff --git a/graphty/src/theme.ts b/graphty/src/theme.ts
+index 671ed0889..3b6b63482 100644
+--- a/graphty/src/theme.ts
++++ b/graphty/src/theme.ts
+@@ -1,17 +1,64 @@
+ import { createCompactTheme } from "@graphty/compact-mantine";
++import type { MantineColorsTuple, MantineThemeOverride } from "@mantine/core";
+ 
+ /**
+- * The one theme the application mounts, and the one its tests mount: `@graphty/compact-mantine`'s
+- * Figma theme with its WCAG 2.2 AA option on.
+- *
+- * The AA option changes color tokens only -- nothing moves or resizes. The app needs it because
+- * Figma's own colors miss AA in places the shell draws everywhere: a filled button's white label
+- * on Figma's dark primary blue measures 3.53:1, under the 4.5:1 WCAG 1.4.3 asks of text.
+- *
+- * The app adds nothing else. The neutral dark greys, the brand palette, every Mantine component
+- * this app renders (NativeSelect included) and the stylesheet the theme injects
+- * all come from the library, so a fix to any of them lands in the library for every consumer.
+- * If the app ever needs a theme value the library does not have, the value goes into the
+- * library, not into a local override here.
++ * SCRATCH BRANCH ONLY (exp/brand-accent-preview, never merged): previews graphty logo accents as
++ * the app's primary color. `?accent=<key>` picks one and is remembered in localStorage; no key
++ * keeps today's theme. Shade roles (compact-mantine tokens.ts): light 6 filled / 7 hover and
++ * text / 0-2 tints; dark 8 filled / 9 hover / 4 text.
+  */
+-export const theme = createCompactTheme({ highContrast: true });
++const ACCENTS: Record<string, { colors: MantineColorsTuple; onBrandDark?: string; onBrandLight?: string; extra?: string }> = {
++    // PK-A: the brand magenta as the UI primary, as is
++    "pk-a": { colors: ["#fde8ef", "#fbd0df", "#f6a3c0", "#f285aa", "#f06592", "#e84a85", "#dd2c6d", "#c4245f", "#dd2c6d", "#c4245f"] },
++    // PK-B: berry, a calmer, deeper step of the same hue for the UI; magenta stays the logo's
++    "pk-b": { colors: ["#f9e6ee", "#f2cddc", "#e6a0bc", "#e3779f", "#f06592", "#c93a72", "#b8245c", "#9c1f52", "#b8245c", "#9c1f52"] },
++    // PK-C: slate indigo for the UI; magenta only in the logo and highlights
++    "pk-c": { colors: ["#eceefd", "#d8dcfb", "#b3baf6", "#97a2f9", "#8e9bff", "#6574e6", "#4f5fd9", "#3f4dbf", "#4f5fd9", "#3f4dbf"] },
++    // GR-A: the bright brand lime as the UI primary, as is (white labels kept, to show the failure)
++    "gr-a": { colors: ["#f1fbd3", "#e2f7a8", "#d3f47c", "#cbf35b", "#c4f23a", "#b5e62a", "#c4f23a", "#a8d930", "#c4f23a", "#a8d930"] },
++    // GR-B: lime with ink labels in dark mode; olive with white labels in light mode
++    "gr-b": { colors: ["#f1fbd3", "#e2f7a8", "#c9e98a", "#b5dc5c", "#c4f23a", "#6f9c00", "#588300", "#4d7300", "#c4f23a", "#a8d930"], onBrandDark: "#111111" },
++    // GR-D: GR-B, with round 2's lime #8fbf00 for graphics (icons, selection edges) in the light theme
++    "gr-d": { colors: ["#f1fbd3", "#e2f7a8", "#c9e98a", "#b5dc5c", "#c4f23a", "#6f9c00", "#588300", "#4d7300", "#c4f23a", "#a8d930"], onBrandDark: "#111111",
++        extra: "--cm-icon-brand:light-dark(#8fbf00,#c4f23a);--cm-border-selected:light-dark(#8fbf00,#c4f23a);--cm-border-selected-strong:light-dark(#8fbf00,#c4f23a);" },
++    // Round 8 brighter greens: the chosen green fills buttons in the light theme (ink labels), text stays #588300; dark theme is GR-B
++    "gn-8fbf00": { colors: ["#f1fbd3", "#e2f7a8", "#c9e98a", "#b5dc5c", "#c4f23a", "#8fbf00", "#8fbf00", "#80aa00", "#c4f23a", "#a8d930"], onBrandDark: "#111111", onBrandLight: "#14161f",
++        extra: "--cm-text-brand:light-dark(#588300,#c4f23a);--cm-icon-brand:light-dark(#8fbf00,#c4f23a);--cm-border-selected:light-dark(#8fbf00,#c4f23a);--cm-border-selected-strong:light-dark(#8fbf00,#c4f23a);" },
++    "gn-97c800": { colors: ["#f1fbd3", "#e2f7a8", "#c9e98a", "#b5dc5c", "#c4f23a", "#97c800", "#97c800", "#86b200", "#c4f23a", "#a8d930"], onBrandDark: "#111111", onBrandLight: "#14161f",
++        extra: "--cm-text-brand:light-dark(#588300,#c4f23a);--cm-icon-brand:light-dark(#97c800,#c4f23a);--cm-border-selected:light-dark(#97c800,#c4f23a);--cm-border-selected-strong:light-dark(#97c800,#c4f23a);" },
++    "gn-a2d400": { colors: ["#f1fbd3", "#e2f7a8", "#c9e98a", "#b5dc5c", "#c4f23a", "#a2d400", "#a2d400", "#90bc00", "#c4f23a", "#a8d930"], onBrandDark: "#111111", onBrandLight: "#14161f",
++        extra: "--cm-text-brand:light-dark(#588300,#c4f23a);--cm-icon-brand:light-dark(#a2d400,#c4f23a);--cm-border-selected:light-dark(#a2d400,#c4f23a);--cm-border-selected-strong:light-dark(#a2d400,#c4f23a);" },
++    "gn-aedf10": { colors: ["#f1fbd3", "#e2f7a8", "#c9e98a", "#b5dc5c", "#c4f23a", "#aedf10", "#aedf10", "#9bc80e", "#c4f23a", "#a8d930"], onBrandDark: "#111111", onBrandLight: "#14161f",
++        extra: "--cm-text-brand:light-dark(#588300,#c4f23a);--cm-icon-brand:light-dark(#aedf10,#c4f23a);--cm-border-selected:light-dark(#aedf10,#c4f23a);--cm-border-selected-strong:light-dark(#aedf10,#c4f23a);" },
++    "gn-b8e826": { colors: ["#f1fbd3", "#e2f7a8", "#c9e98a", "#b5dc5c", "#c4f23a", "#b8e826", "#b8e826", "#a4d021", "#c4f23a", "#a8d930"], onBrandDark: "#111111", onBrandLight: "#14161f",
++        extra: "--cm-text-brand:light-dark(#588300,#c4f23a);--cm-icon-brand:light-dark(#b8e826,#c4f23a);--cm-border-selected:light-dark(#b8e826,#c4f23a);--cm-border-selected-strong:light-dark(#b8e826,#c4f23a);" },
++    "gn-c4f23a": { colors: ["#f1fbd3", "#e2f7a8", "#c9e98a", "#b5dc5c", "#c4f23a", "#c4f23a", "#c4f23a", "#aed832", "#c4f23a", "#a8d930"], onBrandDark: "#111111", onBrandLight: "#14161f",
++        extra: "--cm-text-brand:light-dark(#588300,#c4f23a);--cm-icon-brand:light-dark(#c4f23a,#c4f23a);--cm-border-selected:light-dark(#c4f23a,#c4f23a);--cm-border-selected-strong:light-dark(#c4f23a,#c4f23a);" },
++    // GR-C: deep teal for the UI; lime only in the logo and highlights
++    "gr-c": { colors: ["#e0f5f2", "#bfeae4", "#8fd8cd", "#5ec6b8", "#2dd4bf", "#1a9e8f", "#0b7a6f", "#08665d", "#0b7a6f", "#08665d"] },
++};
++
++function pickAccent(): string | null {
++    if (typeof window === "undefined") return null;
++    const fromUrl = new URLSearchParams(window.location.search).get("accent");
++    try {
++        if (fromUrl) localStorage.setItem("brand-accent-preview", fromUrl);
++        return fromUrl ?? localStorage.getItem("brand-accent-preview");
++    } catch {
++        return fromUrl;
++    }
++}
++
++const base = createCompactTheme({ highContrast: true });
++const key = pickAccent();
++const accent = key && key in ACCENTS ? ACCENTS[key] : null;
++if (accent && typeof document !== "undefined") {
++    const on = `light-dark(${accent.onBrandLight ?? "#ffffff"}, ${accent.onBrandDark ?? "#ffffff"})`;
++    const style = document.createElement("style");
++    style.textContent = `:root[data-cm-accent]{--cm-text-onbrand:${on};--cm-icon-onbrand:${on};${accent.extra ?? ""}}`;
++    document.head.appendChild(style);
++}
++
++export const theme: MantineThemeOverride = accent
++    ? { ...base, colors: { ...base.colors, accent: accent.colors }, primaryColor: "accent" }
++    : base;
